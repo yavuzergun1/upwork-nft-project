@@ -17,7 +17,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  font-family: "GothamRounded";
+  font-family: "SVN-Gotham Rounded";
   color: #f0f8ff;
 
   h6 {
@@ -37,6 +37,25 @@ header {
   }
 }
 .scroll-icon-container{
-    width: auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   img{
     margin: auto;
+   }
+   p{
+    font-family: 'SVN-Gotham Rounded';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+   }
 }

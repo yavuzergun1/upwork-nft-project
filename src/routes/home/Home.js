@@ -17,6 +17,7 @@ function Home() {
         </header>
         <div className="scroll-icon-container">
           <img src={require(`../../assets/png/Vector.png`)} alt="" />
+          <p>scroll down to explore</p>
         </div>
       </div>
     </div>
