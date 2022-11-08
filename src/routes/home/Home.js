@@ -15,6 +15,9 @@ function Home() {
           <h6>welcome to</h6>
           <img src={require(`../../assets/png/Group 1000002545.png`)} alt="" />
         </header>
+        <div className="scroll-icon-container">
+          <img src={require(`../../assets/png/Vector.png`)} alt="" />
+        </div>
       </div>
     </div>
   );
