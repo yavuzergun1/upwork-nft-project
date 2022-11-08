@@ -5,7 +5,7 @@
   max-width: 1920px;
   height: 1110px;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 .first-planet-left {
   position: absolute;
@@ -64,15 +64,14 @@ header {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-
     color: #ffffff;
   }
 }
 .vector-3 {
-  position: absolute;
   top: 0px;
-  width: 100%;
-  z-index: -1;
+  max-width: 1920px;
+  position: absolute;
+  z-index: 1;
   height: 1320px;
 }
 .home-second {
@@ -82,16 +81,17 @@ header {
   background-size: cover;
   max-width: 1920px;
   height: 1296px;
-  .vector-1 {
-    position: relative;
-    width: 100%;
-    top: -5px;
-    z-index: 0;
-    height: 250px;
-  }
+
   .second-planet-left {
     @extend .first-planet-left;
   }
+}
+.vector-1 {
+  position: relative;
+  width: 100%;
+  top: -5px;
+  z-index: 0;
+  height: 250px;
 }
 .second-body-container {
   margin-top: 50px;
@@ -99,6 +99,8 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+  position: relative;
+  z-index: -2;
 }
 .secod-body-left {
   width: 40%;

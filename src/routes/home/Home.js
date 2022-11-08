@@ -24,12 +24,12 @@ function Home() {
           <img src={require(`../../assets/png/Vector.png`)} alt="" />
           <p>scroll down to explore</p>
         </div>
+      </div>
         <img
           src={require(`../../assets/png/Vector (3).png`)}
           alt=""
           className="vector-3"
         />
-      </div>
 
       <div className="home-second">
         <img
@@ -66,6 +66,9 @@ function Home() {
           src={require(`../../assets/png/PLANET TIM (1).png`)}
           className="second-planet-right"
         />
+      </div>
+      <div className="home-third">
+
       </div>
     </div>
   );
