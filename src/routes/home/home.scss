@@ -68,9 +68,10 @@ header {
   }
 }
 .vector-3 {
-  top: 0px;
-  max-width: 1920px;
   position: absolute;
+  max-width: 1920px;
+  width: 100%;
+  top: 0px;
   z-index: 1;
   height: 1320px;
 }
@@ -154,14 +155,20 @@ header {
   background-image: url("../../assets/png/BG (2).png");
   background-repeat: no-repeat;
   background-size: cover;
+  img:nth-child(2) {
+    width: 100%;
+  }
   img:nth-child(3) {
     margin-top: 50px;
+    width: 100%;
   }
   img:nth-child(4) {
     margin-top: 50px;
+    width: 100%;
   }
   img:nth-child(5) {
     margin-top: 50px;
+    width: 100%;
   }
 }
 .third-header {
@@ -201,6 +208,10 @@ header {
 .fifth-body-first {
   display: flex;
   justify-content: center;
+  img{
+      width: 70%;
+
+  }
 }
 .fifth-body-second {
   display: flex;
@@ -215,7 +226,7 @@ header {
   border-radius: 25px;
   display: flex;
   align-items: center;
-  img{
+  img {
     width: 52px;
     height: 52px;
   }
@@ -247,7 +258,7 @@ header {
   padding: 20px;
   display: flex;
   align-items: center;
-  p:first-child{
+  p:first-child {
     width: 90%;
     font-style: normal;
     font-weight: 500;
@@ -256,11 +267,11 @@ header {
     color: #170f49;
   }
 }
-.right-bear{
+.right-bear {
   position: absolute;
   right: 0px;
 }
-.vector-5{
+.vector-5 {
   position: absolute;
   right: 0px;
   bottom: 210px;

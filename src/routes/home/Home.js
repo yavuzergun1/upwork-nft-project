@@ -53,11 +53,11 @@ function Home() {
                 to keep the Earth updated with the most exquisite, insightful
                 and laughable news in entertainment, lifestyle, technology,
                 gaming and
+              </p>
                 <p>
                   We save the humanity from being out-of-date, out-of-style and
                   most importantly, out-of-news.
                 </p>
-              </p>
             </div>
           </div>
         </div>
