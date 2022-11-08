@@ -83,6 +83,36 @@ function Home() {
         <div className="fifth-body-first">
           <img src={require(`../../assets/png/Group 1000002631.png`)} />
         </div>
+        <h2>FAQ</h2>
+        <div className="fifth-body-second">
+          <div className="container p-first">
+            <div className="p-left">
+              <p>Who is the team behind Bear The Awesome News?</p>
+              <p>
+                We are QBA Studio, a collective of tech-savvy individuals that
+                aims to contribute to the new future of entertainment.
+              </p>
+            </div>
+            <img src={require(`../../assets/png/Group 35538.png`)} />
+          </div>
+          <div className="container p-second">
+            <p>What makes The Bear Gang so unique?</p>
+          </div>
+          <div className="container p-third">
+            <p>What is the total supply for the Bear collection? </p>
+          </div>
+          <div className="container p-fourth">
+            <p>What do you call a bear without any teeth?</p>
+          </div>
+          <img
+            src={require(`../../assets/png/BIETTUOT-FACE (2).png`)}
+            className="right-bear"
+          />
+          <img
+            src={require(`../../assets/png/Vector (5).png`)}
+            className="vector-5"
+          />
+        </div>
       </div>
     </div>
   );

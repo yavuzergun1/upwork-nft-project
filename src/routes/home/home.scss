@@ -171,24 +171,97 @@ header {
   padding: 50px 0px;
 }
 
-.home-fourth {
-  background-image: url("../../assets/png/BG (3).png");
-  max-width: 6858px;
-  height: 1080px;
-}
+// .home-fourth {
+//   background-image: url("../../assets/png/BG (3).png");
+//   max-width: 6858px;
+//   height: 1080px;
+// }
 
 .home-fifth {
   background-image: url("../../assets/png/BG (4).png");
   max-width: 1920px;
   height: 3487px;
+  position: relative;
+  h2 {
+    font-family: "SVN-Gotham Rounded";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 100%;
+    text-align: center;
+    color: #ffffff;
+  }
 }
 .fifth-header {
   @extend .third-header;
-  img{
+  img {
     margin: 50px 0px;
   }
 }
-.fifth-body-first{
+.fifth-body-first {
   display: flex;
   justify-content: center;
+}
+.fifth-body-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 50%;
+  background: #fffdf6;
+  box-shadow: 0px 6.22767px 16.6071px rgba(74, 58, 255, 0.19);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  img{
+    width: 52px;
+    height: 52px;
+  }
+}
+.p-first {
+  height: 240px;
+  padding: 20px;
+  p:first-child {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #170f49;
+  }
+  p:nth-child(2) {
+    font-family: "SVN-Gotham Rounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #6f6c90;
+  }
+}
+.p-second,
+.p-third,
+.p-fourth {
+  height: 120px;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  p:first-child{
+    width: 90%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #170f49;
+  }
+}
+.right-bear{
+  position: absolute;
+  right: 0px;
+}
+.vector-5{
+  position: absolute;
+  right: 0px;
+  bottom: 210px;
 }
