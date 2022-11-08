@@ -1,4 +1,3 @@
-import './App.css';
 import Home from './routes/home/Home.js';
 
 function App() {

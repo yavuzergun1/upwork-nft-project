@@ -6,7 +6,6 @@ function Home() {
   return (
     <div>
       <div className="home-first">
-      <img src={require(`../../assets/png/Vector (3).png`)} alt="" className="vector-3" />
         <Navbar />
         <img
           src={require(`../../assets/png/PLANET TIM.png`)}
@@ -21,8 +20,9 @@ function Home() {
           <p>scroll down to explore</p>
         </div>
       </div>
+      <img src={require(`../../assets/png/Vector (3).png`)} alt="" className="vector-3" />
       <div className="home-second">
-        <img src={require(`../../assets/png/Vector (1).png`)} alt="" className="vector-2"/>
+        <img src={require(`../../assets/png/Vector (1).png`)} alt="" className="vector-1"/>
       </div>
     </div>
   );
