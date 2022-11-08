@@ -7,7 +7,14 @@ function Home() {
     <div>
       <div className="home-first">
         <Navbar />
-        <img src={require(`../../assets/PLANET TIM.png`)} className="first-planet-left" />
+        <img
+          src={require(`../../assets/png/PLANET TIM.png`)}
+          className="first-planet-left"
+        />
+        <header>
+          <h6>welcome to</h6>
+          <img src={require(`../../assets/png/Group 1000002545.png`)} alt="" />
+        </header>
       </div>
     </div>
   );

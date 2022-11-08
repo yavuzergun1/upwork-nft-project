@@ -1,5 +1,35 @@
-.home-first{
-    background-image: url("../../assets/BG.png");
-    width: 100%;
-    height: 1110px;
+.home-first {
+  background-image: url("../../assets/png/BG.png");
+  width: 100%;
+  height: 1110px;
+}
+.first-planet-left {
+  position: absolute;
+  left: 0px;
+  top: 124px;
+}
+header {
+    margin-top: 78px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  font-family: "GothamRounded";
+  color: #f0f8ff;
+
+  h6 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 75px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+  }
+  img {
+    width: 80%;
+  }
 }
