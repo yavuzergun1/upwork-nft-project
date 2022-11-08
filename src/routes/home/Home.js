@@ -75,6 +75,15 @@ function Home() {
         <img src={require(`../../assets/png/ANH GAU 2.png`)} />
         <img src={require(`../../assets/png/BEAR GANG DONG CHU 1.png`)} />
       </div>
+      <div className="home-fourth"></div>
+      <div className="home-fifth">
+        <div className="fifth-header">
+          <img src={require(`../../assets/png/OUR CREW.png`)} />
+        </div>
+        <div className="fifth-body-first">
+          <img src={require(`../../assets/png/Group 1000002631.png`)} />
+        </div>
+      </div>
     </div>
   );
 }

@@ -154,20 +154,41 @@ header {
   background-image: url("../../assets/png/BG (2).png");
   background-repeat: no-repeat;
   background-size: cover;
-  img:nth-child(3){
-  margin-top: 50px;
+  img:nth-child(3) {
+    margin-top: 50px;
+  }
+  img:nth-child(4) {
+    margin-top: 50px;
+  }
+  img:nth-child(5) {
+    margin-top: 50px;
+  }
 }
-img:nth-child(4){
-  margin-top: 50px;
-}
-img:nth-child(5){
-  margin-top: 50px;
-}
-}
-.third-header{
+.third-header {
   width: 100%;
   display: flex;
   justify-content: center;
-padding: 50px 0px;
+  padding: 50px 0px;
+}
 
+.home-fourth {
+  background-image: url("../../assets/png/BG (3).png");
+  max-width: 6858px;
+  height: 1080px;
+}
+
+.home-fifth {
+  background-image: url("../../assets/png/BG (4).png");
+  max-width: 1920px;
+  height: 3487px;
+}
+.fifth-header {
+  @extend .third-header;
+  img{
+    margin: 50px 0px;
+  }
+}
+.fifth-body-first{
+  display: flex;
+  justify-content: center;
 }
