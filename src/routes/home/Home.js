@@ -35,6 +35,15 @@ function Home() {
           alt=""
           className="vector-1"
         />
+        <img
+          src={require(`../../assets/png/PLANET DO (1).png`)}
+          className="second-planet-left"
+        />
+        <div className="home-second-body-container"></div>
+        <img
+          src={require(`../../assets/png/PLANET TIM (1).png`)}
+          className="second-planet-right"
+        />
       </div>
     </div>
   );

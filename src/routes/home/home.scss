@@ -76,6 +76,7 @@ header {
   height: 1320px;
 }
 .home-second {
+  position: relative;
   background-image: url("../../assets/png/BG (1).png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -88,4 +89,18 @@ header {
     z-index: 0;
     height: 250px;
   }
+  .second-planet-left {
+    @extend .first-planet-left;
+  }
+}
+.home-second-body-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.second-planet-right{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
