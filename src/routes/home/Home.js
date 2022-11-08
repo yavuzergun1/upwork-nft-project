@@ -25,11 +25,11 @@ function Home() {
           <p>scroll down to explore</p>
         </div>
       </div>
-        <img
-          src={require(`../../assets/png/Vector (3).png`)}
-          alt=""
-          className="vector-3"
-        />
+      <img
+        src={require(`../../assets/png/Vector (3).png`)}
+        alt=""
+        className="vector-3"
+      />
 
       <div className="home-second">
         <img
@@ -43,8 +43,7 @@ function Home() {
         />
         <div className="second-body-container">
           <div className="second-body-left">
-            <BearSlider/>
-            
+            <BearSlider />
           </div>
           <div className="second-body-right">
             <div className="who-are-we-container">
@@ -68,7 +67,13 @@ function Home() {
         />
       </div>
       <div className="home-third">
-
+        <div className="third-header">
+          <img src={require(`../../assets/png/9999 CUTE BEAR.png`)} />
+        </div>
+        <img src={require(`../../assets/png/BEAR GANG DONG CHU 1.png`)} />
+        <img src={require(`../../assets/png/ANH GAU 1.png`)} />
+        <img src={require(`../../assets/png/ANH GAU 2.png`)} />
+        <img src={require(`../../assets/png/BEAR GANG DONG CHU 1.png`)} />
       </div>
     </div>
   );
