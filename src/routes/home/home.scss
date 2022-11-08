@@ -2,17 +2,10 @@
   background-image: url("../../assets/png/BG.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   max-width: 1920px;
   height: 1110px;
   position: relative;
   z-index: 1;
-}
-.vector-3 {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  z-index: -1;
 }
 .first-planet-left {
   position: absolute;
@@ -28,8 +21,8 @@ header {
   width: 100%;
   font-family: "SVN-Gotham Rounded";
   color: #f0f8ff;
-//   position: relative;
-//   z-index: 2;
+  //   position: relative;
+  //   z-index: 2;
   h6 {
     font-style: normal;
     font-weight: 700;
@@ -51,8 +44,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-//   position: relative;
-//   z-index: 2;
+  //   position: relative;
+  //   z-index: 2;
   img {
     margin: auto;
   }
@@ -69,18 +62,24 @@ header {
     color: #ffffff;
   }
 }
-
+.vector-3 {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  height: 1320px;
+}
 .home-second {
   background-image: url("../../assets/png/BG (1).png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
+  max-width: 1920px;
   height: 1296px;
-
   .vector-1 {
     position: relative;
     width: 100%;
-    top: -10px;
+    top: -5px;
     z-index: 0;
+    height: 250px;
   }
 }
