@@ -1,0 +1,49 @@
+.swiper {
+  width: 870px;
+  height: 1250px;
+}
+.bear-background {
+  width: 570px;
+  height: 570px;
+  background-image: url("../../../assets/png/Rectangle\ 4475.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.swiper-slide {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.yellow {
+  width: 956;
+  height: 956;
+  position: relative;
+  top: -185px;
+  left: -75px;
+}
+.green {
+  width: 976;
+  height: 976;
+  position: relative;
+  top: -175px;
+  left: -225px;
+}
+.blue {
+  width: 896;
+  height: 982;
+  position: relative;
+  top: -185px;
+  left: -165px;
+}
+.pink {
+  width: 976;
+  height: 956;
+  position: relative;
+  top: -285px;
+  left: -205px;
+}
+.purple {
+  @extend .pink;
+}

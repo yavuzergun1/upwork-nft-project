@@ -1,4 +1,5 @@
 import React from "react";
+import BearSlider from "../../components/navbar/bear-slider/Bear-slider";
 import Navbar from "../../components/navbar/Navbar";
 import "./home.scss";
 
@@ -29,6 +30,7 @@ function Home() {
           className="vector-3"
         />
       </div>
+
       <div className="home-second">
         <img
           src={require(`../../assets/png/Vector (1).png`)}
@@ -39,7 +41,27 @@ function Home() {
           src={require(`../../assets/png/PLANET DO (1).png`)}
           className="second-planet-left"
         />
-        <div className="home-second-body-container"></div>
+        <div className="second-body-container">
+          <div className="second-body-left">
+            <BearSlider/>
+            
+          </div>
+          <div className="second-body-right">
+            <div className="who-are-we-container">
+              <h2>WHO ARE WE?</h2>
+              <p>
+                We are The Paparazzi of The Galaxy, who travel across the galaxy
+                to keep the Earth updated with the most exquisite, insightful
+                and laughable news in entertainment, lifestyle, technology,
+                gaming and
+                <p>
+                  We save the humanity from being out-of-date, out-of-style and
+                  most importantly, out-of-news.
+                </p>
+              </p>
+            </div>
+          </div>
+        </div>
         <img
           src={require(`../../assets/png/PLANET TIM (1).png`)}
           className="second-planet-right"
