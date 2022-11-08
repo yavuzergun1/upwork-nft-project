@@ -293,8 +293,35 @@ header {
   position: absolute;
   right: 0px;
 }
+.home-sixth {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
 .vector-5 {
   position: absolute;
   right: 0px;
   bottom: 210px;
+}
+.bear-gang {
+  width: 70%;
+  height: 170%;
+  margin-top: 200px;
+}
+.pong-pay {
+  position: absolute;
+  right: 150px;
+  bottom: 190px;
+  width: 719px;
+  height: 719px;
+}
+footer {
+  width: 100%;
+  height: 209px;
+  background-color: #3b2472;
+  box-shadow: 0px -2px 10.5px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 0px;
 }

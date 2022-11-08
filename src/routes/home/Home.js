@@ -129,11 +129,24 @@ function Home() {
             src={require(`../../assets/png/BIETTUOT-FACE (2).png`)}
             className="right-bear"
           />
+        </div>
+        <div className="home-sixth">
+          <img
+            src={require(`../../assets/png/PONG PAY-FACE (1).png`)}
+            className="pong-pay"
+          />
           <img
             src={require(`../../assets/png/Vector (5).png`)}
             className="vector-5"
           />
+          <img
+            src={require(`../../assets/png/Group 76198.png`)}
+            className="bear-gang"
+          />
         </div>
+        <footer>
+          sda
+        </footer>
       </div>
     </div>
   );
