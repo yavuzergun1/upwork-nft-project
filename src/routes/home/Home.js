@@ -54,10 +54,10 @@ function Home() {
                 and laughable news in entertainment, lifestyle, technology,
                 gaming and
               </p>
-                <p>
-                  We save the humanity from being out-of-date, out-of-style and
-                  most importantly, out-of-news.
-                </p>
+              <p>
+                We save the humanity from being out-of-date, out-of-style and
+                most importantly, out-of-news.
+              </p>
             </div>
           </div>
         </div>
@@ -81,7 +81,28 @@ function Home() {
           <img src={require(`../../assets/png/OUR CREW.png`)} />
         </div>
         <div className="fifth-body-first">
-          <img src={require(`../../assets/png/Group 1000002631.png`)} />
+          <div className="bear-cards-container">
+            <img
+              src={require(`../../assets/png/Group 1000002593.png`)}
+              className="bear-cards"
+            />
+            <img
+              src={require(`../../assets/png/Group 1000002594.png`)}
+              className="bear-cards"
+            />
+            <img
+              src={require(`../../assets/png/Group 1000002588.png`)}
+              className="bear-cards"
+            />
+            <img
+              src={require(`../../assets/png/Group 1000002590.png`)}
+              className="bear-cards"
+            />
+            <img
+              src={require(`../../assets/png/Group 1000002592.png`)}
+              className="bear-cards"
+            />
+          </div>
         </div>
         <h2>FAQ</h2>
         <div className="fifth-body-second">

@@ -208,9 +208,31 @@ header {
 .fifth-body-first {
   display: flex;
   justify-content: center;
-  img{
-      width: 70%;
+}
+.bear-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1200px;
+  img:nth-child(1) {
+    margin-left: 80px;
+    margin-bottom: 80px;
+  }
+  img:nth-child(2) {
+    margin-left: 80px;
+    margin-bottom: 80px;
+  }
+  img:nth-child(3) {
+    margin-left: 80px;
+    margin-bottom: 80px;
+  }
+  img:nth-child(5) {
+    margin-left: 80px;
+  }
 
+  img {
+    width: 294px;
+    height: 394px;
   }
 }
 .fifth-body-second {
