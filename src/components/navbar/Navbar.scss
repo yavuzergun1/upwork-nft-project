@@ -1,7 +1,9 @@
-.nav-container{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 59px;
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 59px;
+  position: relative;
+  z-index: 2;
 }
 
 .nav-home {
