@@ -83,13 +83,15 @@ header {
   transition: 0.5s;
 }
 .animated-bears {
-  position: absolute;
+  position: relative;
   z-index: 4;
   width: 90%;
   top: -400px;
 }
-.bears-none{
-transform: scaleY(0);
+.bears-none {
+  display: flex;
+  justify-content: center;
+  transform: scaleY(0);
   transition: 0.5s;
 }
 .home-second {
