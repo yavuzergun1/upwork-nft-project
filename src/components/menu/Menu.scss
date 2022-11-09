@@ -2,18 +2,19 @@
   background-image: url("../../assets/png/BG\ \(5\).png");
   width: 600px;
   height: 1200px;
-  position: absolute;
+  position: relative;
   right: 0;
-  z-index: 5;
-  transform-origin:right;
   transform: scaleX(1);
   transition: 0.5s;
+  transform-origin: right;
+position: absolute;
 }
 .menu-none {
   position: absolute;
-  transform-origin: right;
+  right: 0px;
   transform: scaleX(0);
   transition: 0.5s;
+  transform-origin: right;
 }
 
 .menu-mute {
@@ -29,4 +30,36 @@
   height: 30px;
   left: 483px;
   top: 57px;
+}
+.menu-links {
+  position: absolute;
+  width: 454px;
+  height: 539px;
+  left: 75px;
+  top: 270px;
+
+  font-family: "SVN-Gotham Rounded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 77px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  p:first-child {
+    width: 200px;
+    background-color: yellow;
+    border-radius: 35px;
+    color: black;
+    text-align: center;
+    font-weight: 800;
+  }
+  p {
+    margin: 0px;
+  }
+}
+.menu-logo {
+  position: absolute;
+  bottom: 250px;
+  left: 80px;
 }
