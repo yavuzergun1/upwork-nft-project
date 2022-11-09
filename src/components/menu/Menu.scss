@@ -11,28 +11,32 @@ position: absolute;
 }
 .menu-none {
   position: absolute;
+    background-image: url("../../assets/png/BG\ \(5\).png");
   right: 0px;
+  transform: translate(60px 50px);
   transform: scaleX(0);
   transition: 0.5s;
   transform-origin: right;
 }
 
 .menu-mute {
-  position: absolute;
+    position: relative;
   width: 57px;
   height: 34px;
   left: 411px;
   top: 55px;
 }
 .menu-close {
-  position: absolute;
+        position: relative;
+
   width: 50px;
   height: 30px;
-  left: 483px;
-  top: 57px;
+  left: 430px;
+  top: 53px;
 }
 .menu-links {
-  position: absolute;
+        position: relative;
+
   width: 454px;
   height: 539px;
   left: 75px;
@@ -59,7 +63,8 @@ position: absolute;
   }
 }
 .menu-logo {
-  position: absolute;
-  bottom: 250px;
+        position: relative;
+
+  bottom: -350px;
   left: 80px;
 }

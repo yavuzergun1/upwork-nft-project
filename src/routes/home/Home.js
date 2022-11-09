@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import BearSlider from "../../components/bear-slider/Bear-slider";
 import Menu from "../../components/menu/Menu";
 import Navbar from "../../components/navbar/Navbar";
 import "./home.scss";
 
 function Home() {
+  const [showBears, setShowBears] = useState(false);
   return (
     <div>
       <div className="home-first">
@@ -21,9 +22,19 @@ function Home() {
           <h6>welcome to</h6>
           <img src={require(`../../assets/png/Group 1000002545.png`)} alt="" />
         </header>
-        <div className="scroll-icon-container">
+        <div
+          className="scroll-icon-container"
+          onClick={() => setShowBears(!showBears)}
+        >
           <img src={require(`../../assets/png/Vector.png`)} alt="" />
           <p>scroll down to explore</p>
+        </div>
+        <div className={showBears ? "animated-bears-container" : "bears-none"}>
+          <img
+            src={require(`../../assets/png/BEAR GANG-0610 1.png`)}
+            alt=""
+            className="animated-bears"
+          />
         </div>
       </div>
       <img

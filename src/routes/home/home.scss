@@ -50,8 +50,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  //   position: relative;
-  //   z-index: 2;
+  position: relative;
+  z-index: 5;
   img {
     margin: auto;
   }
@@ -75,6 +75,23 @@ header {
   z-index: 1;
   height: 1320px;
 }
+.animated-bears-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transform: scaleY(1);
+  transition: 0.5s;
+}
+.animated-bears {
+  position: absolute;
+  z-index: 4;
+  width: 90%;
+  top: -400px;
+}
+.bears-none{
+transform: scaleY(0);
+  transition: 0.5s;
+}
 .home-second {
   position: relative;
   background-image: url("../../assets/png/BG (1).png");
@@ -82,6 +99,7 @@ header {
   background-size: cover;
   max-width: 1920px;
   height: 1296px;
+  z-index: 0;
 
   .second-planet-left {
     @extend .first-planet-left;
@@ -354,15 +372,15 @@ footer {
   width: 20%;
   justify-content: space-between;
 }
-.footer-divider{
+.footer-divider {
   width: 70%;
 }
-.footer-second{
+.footer-second {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.logo-container{
+.logo-container {
   width: 400px;
   display: flex;
   align-items: center;
