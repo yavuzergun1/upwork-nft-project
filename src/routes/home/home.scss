@@ -80,7 +80,7 @@ header {
   display: flex;
   justify-content: center;
   transform: scaleY(1);
-  transition: 0.5s;
+  transition: 1.5s;
 }
 .animated-bears {
   position: relative;
@@ -92,7 +92,7 @@ header {
   display: flex;
   justify-content: center;
   transform: scaleY(0);
-  transition: 0.5s;
+  transition: .3s;
 }
 .home-second {
   position: relative;
