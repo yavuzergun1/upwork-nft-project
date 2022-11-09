@@ -5,13 +5,28 @@
   position: absolute;
   right: 0;
   z-index: 5;
-  transform-origin: right;
+  transform-origin:right;
   transform: scaleX(1);
-  transition: .5s;
+  transition: 0.5s;
 }
-.none {
+.menu-none {
   position: absolute;
   transform-origin: right;
   transform: scaleX(0);
-  transition: .5s;
+  transition: 0.5s;
+}
+
+.menu-mute {
+  position: absolute;
+  width: 57px;
+  height: 34px;
+  left: 411px;
+  top: 55px;
+}
+.menu-close {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  left: 483px;
+  top: 57px;
 }
