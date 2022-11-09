@@ -1,5 +1,4 @@
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -23,7 +22,7 @@ export default () => {
       <SwiperSlide>
         <div className="bear-background">
           <img
-            src={require(`../../../assets/png/HONG HOT-FACE.png`)}
+            src={require(`../../assets/png/HONG HOT-FACE.png`)}
             className="yellow"
             alt=""
           />
@@ -35,7 +34,7 @@ export default () => {
       <SwiperSlide>
         <div className="bear-background">
           <img
-            src={require(`../../../assets/png/Group 1000002558.png`)}
+            src={require(`../../assets/png/Group 1000002558.png`)}
             className="green"
             alt=""
           />
@@ -47,7 +46,7 @@ export default () => {
       <SwiperSlide>
         <div className="bear-background">
           <img
-            src={require(`../../../assets/png/BIETTUOT-FACE.png`)}
+            src={require(`../../assets/png/BIETTUOT-FACE.png`)}
             className="blue"
             alt=""
           />
@@ -59,7 +58,7 @@ export default () => {
       <SwiperSlide>
         <div className="bear-background">
           <img
-            src={require(`../../../assets/png/PONG PAY-FACE.png`)}
+            src={require(`../../assets/png/PONG PAY-FACE.png`)}
             className="pink"
             alt=""
           />
@@ -71,7 +70,7 @@ export default () => {
       <SwiperSlide>
         <div className="bear-background">
           <img
-            src={require(`../../../assets/png/TAROTARO-FACE 2.png`)}
+            src={require(`../../assets/png/TAROTARO-FACE 2.png`)}
             className="purple"
             alt=""
           />

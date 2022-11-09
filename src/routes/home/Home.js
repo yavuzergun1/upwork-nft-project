@@ -1,5 +1,6 @@
 import React from "react";
-import BearSlider from "../../components/navbar/bear-slider/Bear-slider";
+import BearSlider from "../../components/bear-slider/Bear-slider";
+import Menu from "../../components/menu/Menu";
 import Navbar from "../../components/navbar/Navbar";
 import "./home.scss";
 
