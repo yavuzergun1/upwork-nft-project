@@ -145,7 +145,32 @@ function Home() {
           />
         </div>
         <footer>
-          sda
+          <div className="footer-first">
+            <div className="footer-first-left">
+              <p>About</p>
+              <p>Blog</p>
+              <p>Press Kit</p>
+            </div>
+            <img src={require(`../../assets/png/BEAR-LOGO.png`)} />
+            <div className="footer-first-right">
+              <p>Team</p>
+              <p>FAQ</p>
+              <p>Support</p>
+            </div>
+          </div>
+          <img
+            src={require(`../../assets/png/Divider.png`)}
+            className="footer-divider"
+          />
+          <div className="footer-second">
+            <div className="logo-container">
+              <img src={require(`../../assets/png/Group 1000002657.png`)} />
+              <img src={require(`../../assets/png/Group 1000002658.png`)} />
+              <img src={require(`../../assets/png/Group 1000002656.png`)} />
+              <img src={require(`../../assets/png/Group 1000002655.png`)} />
+              <img src={require(`../../assets/png/Group 1000002654.png`)} />
+            </div>
+          </div>
         </footer>
       </div>
     </div>
