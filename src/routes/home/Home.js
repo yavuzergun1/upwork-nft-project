@@ -1,10 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import BearSlider from "../../components/bear-slider/Bear-slider";
 import Menu from "../../components/menu/Menu";
 import Navbar from "../../components/navbar/Navbar";
 import "./home.scss";
 
 function Home() {
+
+ const bear = useRef(null);
+ useEffect(() => {
+   var element = bear.current;
+
+   const transformTop = "translate(-50%, -113%)";
+   const transformNorm = "translate(-50%, -35%)";
+   if (window.outerWidth > 1400) {
+     window.addEventListener("scroll", function () {
+       if (window.scrollY > 10) {
+        setShowBears(true);
+       } else {
+         setShowBears(false)
+       }
+     });
+   }
+ }, []);
+
+
   const [showBears, setShowBears] = useState(false);
   return (
     <div>
@@ -29,7 +48,7 @@ function Home() {
           <img src={require(`../../assets/png/Vector.png`)} alt="" />
           <p>scroll down to explore</p>
         </div>
-        <div className={showBears ? "animated-bears-container" : "bears-none"}>
+        <div ref={bear} className={showBears ? "animated-bears-container" : "bears-none"}>
           <img
             src={require(`../../assets/png/BEAR GANG-0610 1.png`)}
             alt=""
