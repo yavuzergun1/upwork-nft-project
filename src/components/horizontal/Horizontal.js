@@ -14,7 +14,7 @@ function Horizontal() {
   //         ship.style.transform = "translate(0px)";
   //         console.log(window.scrollY);
   //       } else {
-    
+
   //         console.log("deltay", window.deltaY);
   //         ship.scrollLeft += 20
   //         console.log("scrollleft",ship.scrollLeft);
@@ -25,31 +25,52 @@ function Horizontal() {
   //   }
   // }, []);
 
-  
-    const elRef = useRef();
-    useEffect(() => {
-      const element = elRef.current;
-      if (element) {
-        const onWheel = (e) => {
-          console.log(element.scrollLeft);
-           if (element.scrollLeft >= 4800 && e.deltaY > 0) {
-             return () => element.removeEventListener("wheel", onWheel);
-           }
-           if (element.scrollLeft === 0 && e.deltaY < 0) {
-             return () => element.removeEventListener("wheel", onWheel);
-           }
-          if (e.deltaY == 0) return;
-          e.preventDefault();
-          element.scrollTo({
-            left: element.scrollLeft + e.deltaY,
-            behavior: "auto",
-          });
-        };
-        element.addEventListener("wheel", onWheel);
-        return () => element.removeEventListener("wheel", onWheel);
-      }
-    }, []);
-  
+  const elRef = useRef();
+  const spaceRef = useRef();
+  useEffect(() => {
+    const element = elRef.current;
+    const ship = spaceRef.current;
+    if (element) {
+      const onWheel = (e) => {
+        console.log(element.scrollLeft);
+        if (element.scrollLeft < 1390) {
+          ship.style.transform = "translate(0px)";
+          ship.style.transition = "1s";
+        }
+        if (element.scrollLeft > 1390) {
+          ship.style.transform = "translate(210%)";
+          ship.style.transition = "1s";
+        }
+          if (element.scrollLeft > 2325) {
+            ship.style.transform = "translate(590%)";
+            ship.style.transition = "1s";
+        }
+          if (element.scrollLeft > 3000) {
+            ship.style.transform = "translate(950%)";
+            ship.style.transition = "1s";
+          }
+          if (element.scrollLeft > 4100) {
+            ship.style.transform = "translate(1320%)";
+            ship.style.transition = "1s";
+          }
+        if (element.scrollLeft >= 4800 && e.deltaY > 0) {
+          return () => element.removeEventListener("wheel", onWheel);
+        }
+        if (element.scrollLeft === 0 && e.deltaY < 0) {
+          return () => element.removeEventListener("wheel", onWheel);
+        }
+        if (e.deltaY == 0) return;
+        e.preventDefault();
+        element.scrollTo({
+          left: element.scrollLeft + e.deltaY,
+          behavior: "auto",
+        });
+      };
+      element.addEventListener("wheel", onWheel);
+      return () => element.removeEventListener("wheel", onWheel);
+    }
+  }, []);
+
   return (
     <div
       className="horizontal-container"
@@ -63,6 +84,7 @@ function Horizontal() {
           className="journey"
         />
         <img
+          ref={spaceRef}
           style={{ whiteSpace: "nowrap" }}
           src={require(`../../assets/png/SPACESHIP 1.png`)}
           className="spaceship"
