@@ -31,7 +31,8 @@ function Horizontal() {
       const element = elRef.current;
       if (element) {
         const onWheel = (e) => {
-           if (element.scrollLeft >= 3900 && e.deltaY > 0) {
+          console.log(element.scrollLeft);
+           if (element.scrollLeft >= 5800 && e.deltaY > 0) {
              return () => element.removeEventListener("wheel", onWheel);
            }
            if (element.scrollLeft === 0 && e.deltaY < 0) {
