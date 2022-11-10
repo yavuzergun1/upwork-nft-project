@@ -5,26 +5,21 @@ import Navbar from "../../components/navbar/Navbar";
 import "./home.scss";
 
 function Home() {
-
- const bear = useRef(null);
- useEffect(() => {
-   var element = bear.current;
-
-   const transformTop = "translate(-50%, -113%)";
-   const transformNorm = "translate(-50%, -35%)";
-   if (window.outerWidth > 1400) {
-     window.addEventListener("scroll", function () {
-       if (window.scrollY > 10) {
-        setShowBears(true);
-       } else {
-         setShowBears(false)
-       }
-     });
-   }
- }, []);
-
-
   const [showBears, setShowBears] = useState(false);
+
+  useEffect(() => {
+
+    if (window.outerWidth > 1400) {
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 10) {
+          // setShowBears(true);
+        } else {
+          setShowBears(false);
+        }
+      });
+    }
+  }, []);
+
   return (
     <div>
       <div className="home-first">
@@ -41,14 +36,11 @@ function Home() {
           <h6>welcome to</h6>
           <img src={require(`../../assets/png/Group 1000002545.png`)} alt="" />
         </header>
-        <div
-          className="scroll-icon-container"
-          onClick={() => setShowBears(!showBears)}
-        >
+        <div className="scroll-icon-container">
           <img src={require(`../../assets/png/Vector.png`)} alt="" />
           <p>scroll down to explore</p>
         </div>
-        <div ref={bear} className={showBears ? "animated-bears-container" : "bears-none"}>
+        <div className={showBears ? "animated-bears-container" : "bears-none"}>
           <img
             src={require(`../../assets/png/BEAR GANG-0610 1.png`)}
             alt=""
@@ -56,18 +48,9 @@ function Home() {
           />
         </div>
       </div>
-      <img
-        src={require(`../../assets/png/Vector (3).png`)}
-        alt=""
-        className="vector-3"
-      />
-
+   
       <div className="home-second">
-        <img
-          src={require(`../../assets/png/Vector (1).png`)}
-          alt=""
-          className="vector-1"
-        />
+      
         <img
           src={require(`../../assets/png/PLANET DO (1).png`)}
           className="second-planet-left"
@@ -106,7 +89,9 @@ function Home() {
         <img src={require(`../../assets/png/ANH GAU 2.png`)} />
         <img src={require(`../../assets/png/BEAR GANG DONG CHU 1.png`)} />
       </div>
-      <div className="home-fourth"></div>
+      <div className="home-fourth">
+
+      </div>
       <div className="home-fifth">
         <div className="fifth-header">
           <img src={require(`../../assets/png/OUR CREW.png`)} />

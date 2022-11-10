@@ -5,7 +5,7 @@
   max-width: 1920px;
   height: 1110px;
   position: relative;
-  z-index: 3;
+  z-index: 1;
 }
 .first-planet-left {
   position: absolute;
@@ -16,10 +16,10 @@
 .first-planet-right {
   position: absolute;
   right: 0px;
-  top: 634px;
+  top: 504px;
 }
 header {
-  margin-top: 78px;
+  margin-top: 18px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -46,8 +46,7 @@ header {
   }
 }
 .scroll-icon-container {
-  margin-top: 50px;
-  display: flex;
+    display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
@@ -97,26 +96,20 @@ header {
 }
 .home-second {
   position: relative;
-  background-image: url("../../assets/png/BG (1).png");
+  top: -223px;
+  background-image: url("../../assets/png/BG-1011-v6.png");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1920px;
   height: 1296px;
-  z-index: 0;
+  z-index: 2;
 
   .second-planet-left {
     @extend .first-planet-left;
   }
 }
-.vector-1 {
-  position: relative;
-  width: 100%;
-  top: -5px;
-  z-index: 0;
-  height: 250px;
-}
 .second-body-container {
-  margin-top: 50px;
+  padding-top: 200px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -171,6 +164,8 @@ header {
   bottom: 0px;
 }
 .home-third {
+  position: relative;
+  top: -223px;
   max-width: 1920px;
   height: 1426px;
   background-image: url("../../assets/png/BG (2).png");
@@ -206,6 +201,8 @@ header {
 // }
 
 .home-fifth {
+  position: relative;
+  top: -223px;
   background-image: url("../../assets/png/BG (4).png");
   max-width: 1920px;
   height: 3487px;
