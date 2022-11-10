@@ -24,7 +24,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="home-body">
       <div className="home-first">
         <Navbar />
         <img

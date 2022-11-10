@@ -18,6 +18,7 @@ export default () => {
       navigation
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
+      className="bear-swiper"
     >
       <SwiperSlide>
         <div className="bear-background">
