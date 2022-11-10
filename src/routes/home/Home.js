@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import BearSlider from "../../components/bear-slider/Bear-slider";
+import Horizontal from "../../components/horizontal/Horizontal";
 import Menu from "../../components/menu/Menu";
 import Navbar from "../../components/navbar/Navbar";
 import "./home.scss";
@@ -11,6 +12,7 @@ function Home() {
 
     if (window.outerWidth > 1400) {
       window.addEventListener("scroll", function () {
+        // console.log(window.scrollY);
         if (window.scrollY > 10) {
           setShowBears(true);
         } else {
@@ -90,7 +92,7 @@ function Home() {
         <img src={require(`../../assets/png/BEAR GANG DONG CHU 1.png`)} />
       </div>
       <div className="home-fourth">
-
+<Horizontal/>
       </div>
       <div className="home-fifth">
         <div className="fifth-header">

@@ -53,7 +53,6 @@ header {
   z-index: 5;
   img {
     margin: auto;
-    cursor: pointer;
   }
   p {
     font-family: "SVN-Gotham Rounded";
@@ -202,7 +201,7 @@ transform: translate(0px, 580px);
 
 .home-fifth {
   position: relative;
-  top: -223px;
+  // top: -223px;
   background-image: url("../../assets/png/BG (4).png");
   max-width: 1920px;
   height: 3487px;
