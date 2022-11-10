@@ -32,7 +32,7 @@ function Horizontal() {
       if (element) {
         const onWheel = (e) => {
           console.log(element.scrollLeft);
-           if (element.scrollLeft >= 5800 && e.deltaY > 0) {
+           if (element.scrollLeft >= 4800 && e.deltaY > 0) {
              return () => element.removeEventListener("wheel", onWheel);
            }
            if (element.scrollLeft === 0 && e.deltaY < 0) {
@@ -53,14 +53,46 @@ function Horizontal() {
   return (
     <div
       className="horizontal-container"
-      ref={elRef}
       style={{ overflow: "auto" }}
+      ref={elRef}
     >
-      <img
-        style={{ whiteSpace: "nowrap" }}
-        src={require(`../../assets/png/Frame 14.png`)}
-        className="frame"
-      />
+      <div className="horizontal-background">
+        <img
+          style={{ whiteSpace: "nowrap" }}
+          src={require(`../../assets/png/journey 1 (1).png`)}
+          className="journey"
+        />
+        <img
+          style={{ whiteSpace: "nowrap" }}
+          src={require(`../../assets/png/SPACESHIP 1.png`)}
+          className="spaceship"
+        />
+        <img
+          style={{ whiteSpace: "nowrap" }}
+          src={require(`../../assets/png/Group 1000002660.png`)}
+          className="line"
+        />
+        <img
+          style={{ whiteSpace: "nowrap" }}
+          src={require(`../../assets/png/Component 1.png`)}
+          className="component1"
+        />
+        <img
+          style={{ whiteSpace: "nowrap" }}
+          src={require(`../../assets/png/Component 2.png`)}
+          className="component2"
+        />
+        <img
+          style={{ whiteSpace: "nowrap" }}
+          src={require(`../../assets/png/Component 3.png`)}
+          className="component3"
+        />
+        <img
+          style={{ whiteSpace: "nowrap" }}
+          src={require(`../../assets/png/Component 4.png`)}
+          className="component4"
+        />
+      </div>
     </div>
   );
 }
