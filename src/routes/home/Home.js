@@ -1,8 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import BearSlider from "../../components/bear-slider/Bear-slider";
+import CuteBearsSlider from "../../components/cute-bears-slider/CuteBearsSlider";
 import Horizontal from "../../components/horizontal/Horizontal";
 import Menu from "../../components/menu/Menu";
 import Navbar from "../../components/navbar/Navbar";
+import SecondCuteBearSlider from "../../components/second-cuteBear-slider/SecondCuteBearSlider";
 import "./home.scss";
 
 function Home() {
@@ -85,8 +87,8 @@ function Home() {
           <img src={require(`../../assets/png/9999 CUTE BEAR.png`)} />
         </div>
         <img src={require(`../../assets/png/BEAR GANG DONG CHU 1.png`)} />
-        <img src={require(`../../assets/png/ANH GAU 1.png`)} />
-        <img src={require(`../../assets/png/ANH GAU 2.png`)} />
+        <CuteBearsSlider />
+        <SecondCuteBearSlider />
         <img src={require(`../../assets/png/BEAR GANG DONG CHU 1.png`)} />
       </div>
       <div className="home-fourth">

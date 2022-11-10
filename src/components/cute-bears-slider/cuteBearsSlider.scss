@@ -1,0 +1,17 @@
+.cute-bear-swiper{
+    display: flex !important;
+    align-items: center !important;
+    width: 90%;
+    height: 400px;
+}
+.cute-bear-slide{
+    display: flex !important;
+    justify-content: center !important;
+   img{
+    width: 100%;
+    &:hover{
+        transition: 1s;
+        transform: scale(1.07);
+    }
+   }
+}
