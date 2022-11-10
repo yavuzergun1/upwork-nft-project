@@ -12,7 +12,7 @@ function Home() {
     if (window.outerWidth > 1400) {
       window.addEventListener("scroll", function () {
         if (window.scrollY > 10) {
-          // setShowBears(true);
+          setShowBears(true);
         } else {
           setShowBears(false);
         }

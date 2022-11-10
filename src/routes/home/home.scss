@@ -79,7 +79,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  transform: scaleY(1);
+  transform: translate(0px, 0px);
   transition: 1.5s;
 }
 .animated-bears {
@@ -91,8 +91,8 @@ header {
 .bears-none {
   display: flex;
   justify-content: center;
-  transform: scaleY(0);
-  transition: .3s;
+transform: translate(0px, 580px);
+  transition: 1s;
 }
 .home-second {
   position: relative;
