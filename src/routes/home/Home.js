@@ -9,7 +9,6 @@ function Home() {
   const [showBears, setShowBears] = useState(false);
 
   useEffect(() => {
-
     if (window.outerWidth > 1400) {
       window.addEventListener("scroll", function () {
         // console.log(window.scrollY);
@@ -50,9 +49,8 @@ function Home() {
           />
         </div>
       </div>
-   
+
       <div className="home-second">
-      
         <img
           src={require(`../../assets/png/PLANET DO (1).png`)}
           className="second-planet-left"
@@ -92,7 +90,7 @@ function Home() {
         <img src={require(`../../assets/png/BEAR GANG DONG CHU 1.png`)} />
       </div>
       <div className="home-fourth">
-<Horizontal/>
+        <Horizontal />
       </div>
       <div className="home-fifth">
         <div className="fifth-header">

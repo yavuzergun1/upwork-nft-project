@@ -28,18 +28,24 @@ function Horizontal() {
   
     const elRef = useRef();
     useEffect(() => {
-      const el = elRef.current;
-      if (el) {
+      const element = elRef.current;
+      if (element) {
         const onWheel = (e) => {
+           if (element.scrollLeft >= 3900 && e.deltaY > 0) {
+             return () => element.removeEventListener("wheel", onWheel);
+           }
+           if (element.scrollLeft === 0 && e.deltaY < 0) {
+             return () => element.removeEventListener("wheel", onWheel);
+           }
           if (e.deltaY == 0) return;
           e.preventDefault();
-          el.scrollTo({
-            left: el.scrollLeft + e.deltaY,
+          element.scrollTo({
+            left: element.scrollLeft + e.deltaY,
             behavior: "auto",
           });
         };
-        el.addEventListener("wheel", onWheel);
-        return () => el.removeEventListener("wheel", onWheel);
+        element.addEventListener("wheel", onWheel);
+        return () => element.removeEventListener("wheel", onWheel);
       }
     }, []);
   
