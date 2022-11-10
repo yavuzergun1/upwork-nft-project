@@ -92,6 +92,11 @@ function Horizontal() {
           src={require(`../../assets/png/Component 4.png`)}
           className="component4"
         />
+        <img
+          style={{ whiteSpace: "nowrap" }}
+          src={require(`../../assets/png/Ellipse 457.png`)}
+          className="endLine"
+        />
       </div>
     </div>
   );
