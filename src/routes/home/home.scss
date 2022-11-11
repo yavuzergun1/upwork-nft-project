@@ -198,14 +198,22 @@ header {
   }
 }
 
-.home-fourth {
+.horizontal {
   background-image: url("../../assets/png/BG (3).png");
   max-width: 1920px;
   width: 100%;
   height: 1080px;
   margin-top: -223px;
 }
-
+.vertical {
+  background-image: url("../../assets/png/BG\ \(9\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1920px;
+  width: 100%;
+  height: 1717px;
+  margin-top: -223px;
+}
 .home-fifth {
   position: relative;
   width: 100%;
@@ -429,141 +437,153 @@ footer {
         .pong-pay {
           right: 80px;
         }
-        @media (max-width: 1000px) {
-          .animated-bears {
-            top: 90px;
+        @media (max-width: 1100px) {
+          .home-third {
+            height: 1200px;
           }
-          .second-body-container {
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-          }
-          .second-body-left {
-            width: 80%;
-          }
-          .second-body-right {
-            width: 80%;
-          }
-          .second-planet-right {
-            width: 150px;
-          }
-          .right-bear {
-            top: 1050px;
-          }
-          .bear-gang {
-            margin-top: 90px;
-            height: 100%;
-          }
-          .pong-pay {
-            width: 450px;
-            right: 85px;
-          }
-        }
-        @media (max-width: 960px) {
-          header {
-            margin-top: 150px;
-          }
-          .scroll-icon-container {
-            margin-top: 50px;
-            img {
-              width: 25px;
+
+          @media (max-width: 1000px) {
+            .animated-bears {
+              top: 90px;
             }
-            p {
-              font-size: 12px;
+            .second-body-container {
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start;
             }
-          }
-          .animated-bears {
-            top: 0px;
-          }
-          @media (max-width: 860px) {
-            header {
-              margin-top: 200px;
-              h6 {
-                font-size: 35px;
-              }
+            .second-body-left {
+              width: 80%;
+            }
+            .second-body-right {
+              width: 80%;
             }
             .second-planet-right {
-              width: 100px;
+              width: 150px;
             }
-            .animated-bears {
-              top: -20px;
-            }
-            .who-are-we-container {
-              h2 {
-                font-size: 35px;
-              }
-              p {
-                font-size: 15px;
-              }
-            }
+
             .right-bear {
-              width: 300px;
-              top: 1150px;
+              top: 1050px;
             }
-            .p-first {
-              p:first-child {
-                font-size: 20px;
-              }
-              p:nth-child(2) {
-                font-size: 15px;
-              }
-            }
-            .p-second,
-            .p-third,
-            .p-fourth {
-              font-size: 2px;
-              p:first-child {
-                font-size: 20px;
-              }
+            .bear-gang {
+              margin-top: 90px;
+              height: 100%;
             }
             .pong-pay {
-              right: -25px;
-            }
-            .vector-5 {
               width: 450px;
+              right: 85px;
             }
-            @media (max-width: 675px) {
+          }
+          @media (max-width: 960px) {
+            header {
+              margin-top: 150px;
+            }
+            .scroll-icon-container {
+              margin-top: 50px;
+              img {
+                width: 25px;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+            .animated-bears {
+              top: 0px;
+            }
+            @media (max-width: 860px) {
+              header {
+                margin-top: 200px;
+                h6 {
+                  font-size: 35px;
+                }
+              }
+              .second-planet-right {
+                width: 100px;
+              }
               .animated-bears {
-                top: 50px;
+                top: -20px;
               }
-              .bear-cards-container{
-                img{
-                  padding: 20px;
+              .who-are-we-container {
+                h2 {
+                  font-size: 35px;
+                }
+                p {
+                  font-size: 15px;
                 }
               }
-              @media (max-width: 560px) {
-                .first-planet-left {
-                  width: 100px;
+              .right-bear {
+                width: 300px;
+                top: 1150px;
+              }
+              .p-first {
+                p:first-child {
+                  font-size: 20px;
                 }
-                .first-planet-right {
-                  width: 100px;
-                  top: 590px;
+                p:nth-child(2) {
+                  font-size: 15px;
                 }
-                .scroll-icon-container {
-                  img {
-                    width: 20px;
-                  }
-                  p {
-                    font-size: 10px;
-                  }
+              }
+              .p-second,
+              .p-third,
+              .p-fourth {
+                font-size: 2px;
+                p:first-child {
+                  font-size: 20px;
                 }
+              }
+              .pong-pay {
+                right: -25px;
+              }
+              .vector-5 {
+                width: 450px;
+              }
+              @media (max-width: 675px) {
                 .animated-bears {
-                  top: 150px;
+                  top: 50px;
                 }
-                @media (max-width: 480px) {
-                  header {
-                    margin-top: 270px;
-                    h6 {
-                      font-size: 35px;
-                    }
+                .bear-cards-container {
+                  img {
+                    padding: 20px;
+                  }
+                }
+                @media (max-width: 560px) {
+                  .first-planet-left {
+                    width: 100px;
+                  }
+                  .first-planet-right {
+                    width: 100px;
+                    top: 590px;
                   }
                   .scroll-icon-container {
                     img {
-                      width: 15px;
+                      width: 20px;
+                    }
+                    p {
+                      font-size: 10px;
                     }
                   }
                   .animated-bears {
                     top: 150px;
+                  }
+                  @media (max-width: 502px) {
+                    .home-third {
+                      height: 850px;
+                    }
+                    @media (max-width: 480px) {
+                      header {
+                        margin-top: 270px;
+                        h6 {
+                          font-size: 35px;
+                        }
+                      }
+                      .scroll-icon-container {
+                        img {
+                          width: 15px;
+                        }
+                      }
+                      .animated-bears {
+                        top: 150px;
+                      }
+                    }
                   }
                 }
               }

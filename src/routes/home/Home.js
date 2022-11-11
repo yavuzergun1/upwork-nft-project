@@ -116,8 +116,8 @@ function Home() {
         <SecondCuteBearSlider />
         <img src={require(`../../assets/png/BEAR GANG DONG CHU 1.png`)} />
       </div>
-      <div className="home-fourth">
-     { isDesktop ? <Horizontal /> : <Vertical/> }
+      <div className={isDesktop ? "horizontal"  : "vertical" }>
+        {isDesktop ? <Horizontal /> : <Vertical windowSize={windowSize.innerWidth} />}
       </div>
       <div className="home-fifth">
         <div className="fifth-header">

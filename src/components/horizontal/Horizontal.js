@@ -96,7 +96,7 @@ console.log(windowSize);
       style={{ overflow: "auto" }}
       ref={elRef}
     >
-      {/* <div className="horizontal-background"> */}
+      <div className="horizontal-background">
         <img
           style={{ whiteSpace: "nowrap" }}
           src={require(`../../assets/png/journey 1 (1).png`)}
@@ -138,7 +138,7 @@ console.log(windowSize);
           src={require(`../../assets/png/Ellipse 457.png`)}
           className="endLine"
         />
-      {/* </div> */}
+      </div>
     </div>
   );
 }
