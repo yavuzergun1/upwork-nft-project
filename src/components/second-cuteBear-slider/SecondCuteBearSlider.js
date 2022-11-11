@@ -27,7 +27,7 @@ export default () => {
       spaceBetween={15}
       speed={20000}
       slidesPerView={6}
-      onSlideChange={() => console.log("slide change")}
+      // onSlideChange={() => console.log("slide change")}
       //   scrollbar={{ draggable: true, dragSize: 84 }}
       breakpoints={
         {

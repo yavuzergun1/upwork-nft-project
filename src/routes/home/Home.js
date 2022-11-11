@@ -11,7 +11,7 @@ function Home() {
   const [showBears, setShowBears] = useState(false);
 
   useEffect(() => {
-    if (window.outerWidth > 1400) {
+ 
       window.addEventListener("scroll", function () {
         // console.log(window.scrollY);
         if (window.scrollY > 10) {
@@ -20,7 +20,7 @@ function Home() {
           setShowBears(false);
         }
       });
-    }
+    
   }, []);
 
   return (
