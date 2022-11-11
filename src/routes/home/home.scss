@@ -434,10 +434,28 @@ footer {
             top: 90px;
           }
           @media (max-width: 960px) {
+            header{
+              margin-top: 150px;
+            }
             .animated-bears {
               top: 150px;
             }
+             @media (max-width: 860px) {
+            .animated-bears {
+              top: 250px;
+            }
+             @media (max-width:660px) {
+            .animated-bears {
+              top: 300px;
+            }
+             @media (max-width:560px) {
+            .animated-bears {
+              top: 350px;
+            }
           }
+          }
+          }
+        }
         }
       }
     }
