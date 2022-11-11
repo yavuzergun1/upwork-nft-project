@@ -7,7 +7,7 @@ function Vertical({ windowSize }) {
     console.log("VERTICAL", windowSize);
   return (
       <div>
-   { (windowSize < 505) ?  <Mobile/> : (windowSize < 960) ? <Tablet/> : null }
+   { (windowSize < 680) ?  <Mobile/> : (windowSize < 1100) ? <Tablet/> : null }
   </div>
   );
 }
