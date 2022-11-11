@@ -29,16 +29,13 @@ export default () => {
       slidesPerView={6}
       // onSlideChange={() => console.log("slide change")}
       //   scrollbar={{ draggable: true, dragSize: 84 }}
-      breakpoints={
-        {
-          // 1500: { slidesPerView: 7, spaceBetween: 5 },
-          // 1390: { slidesPerView: 6, spaceBetween: 5 },
-          // 1190: { slidesPerView: 5, spaceBetween: 5 },
-          // 870: { slidesPerView: 4, spaceBetween: 5 },
-          // 650: { slidesPerView: 3, spaceBetween: 5 },
-          // 450: { slidesPerView: 2, spaceBetween: 5 },
-        }
-      }
+      breakpoints={{
+        1500: { slidesPerView: 7, spaceBetween: 5 },
+        1390: { slidesPerView: 6, spaceBetween: 5 },
+        1190: { slidesPerView: 5, spaceBetween: 5 },
+        870: { slidesPerView: 4, spaceBetween: 5 },
+        250: { slidesPerView: 3, spaceBetween: 5 },
+      }}
     >
       <SwiperSlide className="cute-bear-slide">
         <img src={require(`../../assets/png/TONY BEAR v2.png`)} alt="" />

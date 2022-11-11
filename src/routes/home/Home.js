@@ -9,20 +9,24 @@ import "./home.scss";
 
 function Home() {
   const [showBears, setShowBears] = useState(false);
-
+  const [isSlider, setIsSlider] = useState();
   useEffect(() => {
- 
-      window.addEventListener("scroll", function () {
-        // console.log(window.scrollY);
-        if (window.scrollY > 10) {
-          setShowBears(true);
-        } else {
-          setShowBears(false);
-        }
-      });
-    
+    if (window.outerWidth <= 700) {
+      setIsSlider(true);
+    }
+    if (window.outerWidth > 700) {
+      setIsSlider(false);
+    }
+    window.addEventListener("scroll", function () {
+      // console.log(window.scrollY);
+      if (window.scrollY > 10) {
+        setShowBears(true);
+      } else {
+        setShowBears(false);
+      }
+    });
+    console.log(window.outerWidth);
   }, []);
-
   return (
     <div className="home-body">
       <div className="home-first">
@@ -39,7 +43,7 @@ function Home() {
           <h6>welcome to</h6>
           <img src={require(`../../assets/png/Group 1000002545.png`)} alt="" />
         </header>
-        <div className="scroll-icon-container"  >
+        <div className="scroll-icon-container">
           <img src={require(`../../assets/png/Vector.png`)} alt="" />
           <p>scroll down to explore</p>
         </div>
