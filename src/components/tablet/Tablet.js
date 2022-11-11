@@ -18,7 +18,7 @@ function Tablet() {
         tabletShip.style.top = "850px";
         tabletShip.style.transition = "2s";
       }
-      if (window.scrollY > 3700) {
+      if (window.scrollY > 3650) {
         tabletShip.style.top = "1100px";
         tabletShip.style.transition = "2s";
       }
