@@ -541,6 +541,10 @@ footer {
               .vector-5 {
                 width: 450px;
               }
+               @media (max-width: 680px) {
+                    .home-third {
+                      height: 850px;
+                    }
               @media (max-width: 675px) {
                 .animated-bears {
                   top: 50px;
@@ -569,10 +573,7 @@ footer {
                   .animated-bears {
                     top: 150px;
                   }
-                  @media (max-width: 502px) {
-                    .home-third {
-                      height: 850px;
-                    }
+                 
                     @media (max-width: 480px) {
                       header {
                         margin-top: 270px;
