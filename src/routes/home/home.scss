@@ -240,9 +240,9 @@ header {
   flex-wrap: wrap;
   width: 90%;
   max-width: 950px;
-img{
-  padding: 50px;
-}
+  img {
+    padding: 50px;
+  }
 }
 .fifth-body-second {
   display: flex;
@@ -324,7 +324,6 @@ img{
   right: 150px;
   bottom: 190px;
   width: 719px;
-  height: 819px;
 }
 footer {
   width: 100%;
@@ -359,7 +358,7 @@ footer {
 .footer-first-left,
 .footer-first-right {
   display: flex;
-  width: 20%;
+  width: 25%;
   justify-content: space-between;
 }
 .footer-divider {
@@ -386,10 +385,20 @@ footer {
     .animated-bears {
       top: -200px;
     }
+    .right-bear {
+      width: 450px;
+    }
     .who-are-we-container {
       h2 {
         font-size: 70px;
       }
+    }
+    .bear-gang {
+      height: 150%;
+      margin-top: 250px;
+    }
+    .pong-pay {
+      width: 600px;
     }
     @media (max-width: 1393px) {
       .animated-bears {
@@ -400,9 +409,25 @@ footer {
       .animated-bears {
         top: -10px;
       }
+      .bear-gang {
+        height: 120%;
+      }
       @media (max-width: 1177px) {
         .animated-bears {
           top: 50px;
+        }
+        .footer-first {
+          width: 60%;
+          img {
+            width: 150px;
+            height: auto;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        .pong-pay {
+          right: 80px;
         }
         @media (max-width: 1000px) {
           .animated-bears {
@@ -422,81 +447,109 @@ footer {
           .second-planet-right {
             width: 150px;
           }
-          @media (max-width: 960px) {
-            header {
-              margin-top: 150px;
+          .right-bear{
+            top: 1050px;
+          }
+          .bear-gang {
+            margin-top: 90px;
+            height: 100%;
+          }
+          .pong-pay {
+            width: 450px;
+            right: 85px;
+          }
+        }
+        @media (max-width: 960px) {
+          header {
+            margin-top: 150px;
+          }
+          .scroll-icon-container {
+            margin-top: 50px;
+            img {
+              width: 25px;
             }
-            .scroll-icon-container {
-              margin-top: 50px;
-              img {
-                width: 25px;
+            p {
+              font-size: 12px;
+            }
+          }
+          .animated-bears {
+            top: 0px;
+          }
+          @media (max-width: 860px) {
+            header {
+              margin-top: 200px;
+              h6 {
+                font-size: 35px;
+              }
+            }
+            .second-planet-right {
+              width: 100px;
+            }
+            .animated-bears {
+              top: -20px;
+            }
+            .who-are-we-container {
+              h2 {
+                font-size: 35px;
               }
               p {
+                font-size: 15px;
+              }
+            }
+            .right-bear{
+              width: 300px;
+              top: 1150px;
+            }
+            .p-first{
+                              font-size: 12px;
+
+              p{
                 font-size: 12px;
               }
             }
-            .animated-bears {
-              top: 0px;
+            .pong-pay{
+              right: -25px;
             }
-            @media (max-width: 860px) {
-              header {
-                margin-top: 200px;
-                h6 {
-                  font-size: 35px;
-                }
-              }
-              .second-planet-right {
-                width: 100px;
-              }
+            .vector-5{
+              width: 450px;
+            }
+            @media (max-width: 660px) {
               .animated-bears {
-                top: -20px;
+                top: 50px;
               }
-              .who-are-we-container {
-                h2 {
-                  font-size: 35px;
+              @media (max-width: 560px) {
+                .first-planet-left {
+                  width: 100px;
                 }
-                p {
-                  font-size: 15px;
+                .first-planet-right {
+                  width: 100px;
+                  top: 590px;
                 }
-              }
-              @media (max-width: 660px) {
-                .animated-bears {
-                  top: 50px;
-                }
-                @media (max-width: 560px) {
-                  .first-planet-left {
-                    width: 100px;
+                .scroll-icon-container {
+                  img {
+                    width: 20px;
                   }
-                  .first-planet-right {
-                    width: 100px;
-                    top: 590px;
+                  p {
+                    font-size: 10px;
+                  }
+                }
+                .animated-bears {
+                  top: 150px;
+                }
+                @media (max-width: 480px) {
+                  header {
+                    margin-top: 270px;
+                    h6 {
+                      font-size: 35px;
+                    }
                   }
                   .scroll-icon-container {
                     img {
-                      width: 20px;
-                    }
-                    p {
-                      font-size: 10px;
+                      width: 15px;
                     }
                   }
                   .animated-bears {
                     top: 150px;
-                  }
-                  @media (max-width: 480px) {
-                    header {
-                      margin-top: 270px;
-                      h6 {
-                        font-size: 35px;
-                      }
-                    }
-                    .scroll-icon-container {
-                      img {
-                        width: 15px;
-                      }
-                    }
-                    .animated-bears {
-                      top: 150px;
-                    }
                   }
                 }
               }
