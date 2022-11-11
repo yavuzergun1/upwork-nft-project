@@ -34,7 +34,13 @@ function Mobile() {
           style={{ whiteSpace: "nowrap" }}
           src={require(`../../assets/png/Group 1000002671.png`)}
           className="m-cms-bear"
-        />      
+        />
+        <img
+          style={{ whiteSpace: "nowrap" }}
+          src={require(`../../assets/png/Group 1000002660 (2).png`)}
+          className="m-line"
+        />
+      
       </div>
     </div>
   );
