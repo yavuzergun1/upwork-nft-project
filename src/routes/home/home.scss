@@ -434,28 +434,67 @@ footer {
             top: 90px;
           }
           @media (max-width: 960px) {
-            header{
+            header {
               margin-top: 150px;
             }
-            .animated-bears {
-              top: 150px;
+            .scroll-icon-container {
+              margin-top: 50px;
+              img {
+                width: 25px;
+              }
+              p {
+                font-size: 12px;
+              }
             }
-             @media (max-width: 860px) {
             .animated-bears {
-              top: 250px;
+              top: 0px;
             }
-             @media (max-width:660px) {
-            .animated-bears {
-              top: 300px;
-            }
-             @media (max-width:560px) {
-            .animated-bears {
-              top: 350px;
+            @media (max-width: 860px) {
+              header {
+                margin-top: 200px;
+                h6 {
+                  font-size: 35px;
+                }
+              }
+              .animated-bears {
+                top: -20px;
+              }
+              @media (max-width: 660px) {
+                .animated-bears {
+                  top: 50px;
+                }
+                @media (max-width: 560px) {
+                  .scroll-icon-container {
+                    img {
+                      width: 20px;
+                    }
+                    p {
+                      font-size: 10px;
+                    }
+                  }
+                  .animated-bears {
+                    top: 150px;
+                  }
+                  @media (max-width: 480px) {
+                    header {
+                      margin-top: 270px;
+                      h6 {
+                        font-size: 35px;
+                      }
+                    }
+                    .scroll-icon-container {
+                      img {
+                        width: 15px;
+                      }
+                    }
+                    .animated-bears {
+                      top: 150px;
+                    }
+                  }
+                }
+              }
             }
           }
-          }
-          }
-        }
         }
       }
     }
