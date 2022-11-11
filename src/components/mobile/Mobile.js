@@ -1,6 +1,35 @@
-import React from 'react'
-import "./mobile.scss"
+import { useRef, useEffect } from "react";
+import "./mobile.scss";
 function Mobile() {
+
+  const spaceMobileRef = useRef();
+  useEffect(() => {
+    const mobileShip = spaceMobileRef.current;
+    window.addEventListener("scroll", function () {
+        console.log(window.scrollY);
+        if (window.scrollY < 2800) {
+          mobileShip.style.top = "0px";
+          mobileShip.style.transition = "2s";
+        }
+      if (window.scrollY > 2800) {
+          mobileShip.style.top = "380px";
+          mobileShip.style.transition= "2s"
+        }
+      if (window.scrollY > 3240) {
+        mobileShip.style.top = "680px";
+        mobileShip.style.transition = "2s";
+        }
+          if (window.scrollY > 3470) {
+            mobileShip.style.top = "980px";
+            mobileShip.style.transition = "2s";
+        }
+         if (window.scrollY > 3700) {
+           mobileShip.style.top = "1200px";
+           mobileShip.style.transition = "2s";
+         }
+    });
+  }, []);
+
   return (
     <div>
       <div className="m-vertical-container">
@@ -10,7 +39,7 @@ function Mobile() {
           className="m-journey"
         />
         <img
-          // ref={spaceRef}
+          ref={spaceMobileRef}
           style={{ whiteSpace: "nowrap" }}
           src={require(`../../assets/png/SPACESHIP 1.png`)}
           className="m-spaceship"
@@ -40,10 +69,9 @@ function Mobile() {
           src={require(`../../assets/png/Group 1000002660 (2).png`)}
           className="m-line"
         />
-      
       </div>
     </div>
   );
 }
 
-export default Mobile
+export default Mobile;

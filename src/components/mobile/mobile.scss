@@ -14,26 +14,28 @@
   height: 138px;
 }
 .m-spaceship {
-  width: 87.33px;
-  height: 87.33px;
+    position: relative;
+ width: 87.33px;
+height: 87.33px;
+// transform: translate(100px);
 }
 .m-bearGang {
-  width: 332.24px;
-  height: 355.71px;
+ width: 332.24px;
+height: 355.71px;
 }
 .m-house {
-  width: 340.01px;
-  height: 384.1px;
+ width: 340.01px;
+height: 384.1px;
 }
 .m-cms-spaceship {
-  width: 291px;
-  height: 314.57px;
+  width: 280px;
+  height: 280px;
 }
 .m-cms-bear {
-  width: 320.51px;
-  height: 353.29px;
+  width: 312.51px;
+  height: 312.29px;
 }
 .m-line{
     position: absolute;
     height: 1200px;
-transform: translate(0px, -70px);}
+transform: translate(0px, -30px);}
