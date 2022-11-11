@@ -464,6 +464,13 @@ footer {
                   top: 50px;
                 }
                 @media (max-width: 560px) {
+                  .first-planet-left{
+                    width: 100px;
+                  }
+                  .first-planet-right{
+                    width: 100px;
+                    top: 590px;
+                  }
                   .scroll-icon-container {
                     img {
                       width: 20px;

@@ -16,8 +16,8 @@ export default () => {
       spaceBetween={0}
       slidesPerView={1}
       navigation
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
+      // onSwiper={(swiper) => console.log(swiper)}
+      // onSlideChange={() => console.log("slide change")}
       className="bear-swiper"
     >
       <SwiperSlide>
