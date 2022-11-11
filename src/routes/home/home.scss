@@ -447,7 +447,7 @@ footer {
           .second-planet-right {
             width: 150px;
           }
-          .right-bear{
+          .right-bear {
             top: 1050px;
           }
           .bear-gang {
@@ -496,26 +496,40 @@ footer {
                 font-size: 15px;
               }
             }
-            .right-bear{
+            .right-bear {
               width: 300px;
               top: 1150px;
             }
-            .p-first{
-                              font-size: 12px;
-
-              p{
-                font-size: 12px;
+            .p-first {
+              p:first-child {
+                font-size: 20px;
+              }
+              p:nth-child(2) {
+                font-size: 15px;
               }
             }
-            .pong-pay{
+            .p-second,
+            .p-third,
+            .p-fourth {
+              font-size: 2px;
+              p:first-child {
+                font-size: 20px;
+              }
+            }
+            .pong-pay {
               right: -25px;
             }
-            .vector-5{
+            .vector-5 {
               width: 450px;
             }
-            @media (max-width: 660px) {
+            @media (max-width: 675px) {
               .animated-bears {
                 top: 50px;
+              }
+              .bear-cards-container{
+                img{
+                  padding: 20px;
+                }
               }
               @media (max-width: 560px) {
                 .first-planet-left {

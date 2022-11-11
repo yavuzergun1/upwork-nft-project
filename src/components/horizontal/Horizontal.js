@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./horizontal.scss";
 
 function Horizontal() {
@@ -24,6 +24,25 @@ function Horizontal() {
   //     });
   //   }
   // }, []);
+
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+console.log(windowSize);
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  }
 
   const elRef = useRef();
   const spaceRef = useRef();
@@ -77,7 +96,7 @@ function Horizontal() {
       style={{ overflow: "auto" }}
       ref={elRef}
     >
-      <div className="horizontal-background">
+      {/* <div className="horizontal-background"> */}
         <img
           style={{ whiteSpace: "nowrap" }}
           src={require(`../../assets/png/journey 1 (1).png`)}
@@ -119,7 +138,7 @@ function Horizontal() {
           src={require(`../../assets/png/Ellipse 457.png`)}
           className="endLine"
         />
-      </div>
+      {/* </div> */}
     </div>
   );
 }

@@ -5,17 +5,37 @@ import Horizontal from "../../components/horizontal/Horizontal";
 import Menu from "../../components/menu/Menu";
 import Navbar from "../../components/navbar/Navbar";
 import SecondCuteBearSlider from "../../components/second-cuteBear-slider/SecondCuteBearSlider";
+import Vertical from "../../components/vertical/Vertical";
 import "./home.scss";
 
 function Home() {
   const [showBears, setShowBears] = useState(false);
-  const [isSlider, setIsSlider] = useState();
+  const [isDesktop, setIsDesktop] = useState();
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
   useEffect(() => {
-    if (window.outerWidth <= 700) {
-      setIsSlider(true);
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
     }
-    if (window.outerWidth > 700) {
-      setIsSlider(false);
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+  console.log(windowSize);
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  }
+
+  useEffect(() => {
+    if (windowSize.innerWidth <= 1100) {
+      setIsDesktop(false);
+    }
+    if (windowSize.innerWidth > 1100) {
+      setIsDesktop(true);
     }
     window.addEventListener("scroll", function () {
       // console.log(window.scrollY);
@@ -25,8 +45,9 @@ function Home() {
         setShowBears(false);
       }
     });
-    console.log(window.outerWidth);
-  }, []);
+    console.log(isDesktop);
+  }, [windowSize]);
+
   return (
     <div className="home-body">
       <div className="home-first">
@@ -96,7 +117,7 @@ function Home() {
         <img src={require(`../../assets/png/BEAR GANG DONG CHU 1.png`)} />
       </div>
       <div className="home-fourth">
-        <Horizontal />
+     { isDesktop ? <Horizontal /> : <Vertical/> }
       </div>
       <div className="home-fifth">
         <div className="fifth-header">
