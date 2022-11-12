@@ -1,55 +1,55 @@
 .menu-container {
   background-image: url("../../assets/png/BG\ \(5\).png");
-  width: 600px;
-  height: 1200px;
-  position: relative;
+  width: 30%;
+  height: 900px;
   right: 0;
   transform: scaleX(1);
   transition: 0.5s;
   transform-origin: right;
   position: absolute;
+  top: 0;
+  z-index: 6;
 }
 .menu-none {
-  width: 600px;
-  height: 1200px;
+  width: 30%;
+  height: 900px;
   position: absolute;
   background-image: url("../../assets/png/BG\ \(5\).png");
   right: 0px;
+  top: 0;
   transform: scaleX(0);
   transition: 0.5s;
   transform-origin: right;
 }
-
 .menu-mute {
-  position: relative;
+  position: absolute;
   width: 57px;
   height: 34px;
-  left: 411px;
+  right: 80px;
   top: 55px;
 }
 .menu-close {
-  position: relative;
+  position: absolute;
   width: 50px;
   height: 30px;
-  left: 430px;
-  top: 53px;
+  right: 20px;
+  top: 55px;
   cursor: pointer;
 }
 .menu-links {
   position: relative;
-
-  width: 454px;
+  width: 80%;
   height: 539px;
   left: 75px;
-  top: 270px;
-
+  top: 120px;
   font-family: "SVN-Gotham Rounded";
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 38px;
   line-height: 77px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   color: white;
   p:first-child {
     width: 200px;
@@ -63,9 +63,58 @@
     margin: 0px;
   }
 }
-.menu-logo {
+.menu-logo-container {
+  width: 70%;
   position: relative;
-
-  bottom: -350px;
-  left: 80px;
+  bottom: -150px;
+  left: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1550px) {
+  .menu-links {
+    font-size: 25px;
+  }
+  @media (max-width: 1265px) {
+    .menu-container {
+      width: 40%;
+      height: 750px;
+    }
+    .menu-none {
+      height: 750px;
+    }
+    .menu-links {
+      font-size: 20px;
+      left: 50px;
+      p:first-child {
+        width: 120px;
+      }
+    }
+    .menu-logo-container {
+      left: 50px;
+      img {
+        width: 35px;
+      }
+    }
+    @media (max-width: 740px) {
+      .menu-container {
+        width: 50%;
+      }
+    }
+    @media (max-width: 540px) {
+      .menu-container {
+        width: 100%;
+      }
+    }
+    @media (max-width: 414px) {
+      .menu-links {
+        font-size: 20px;
+        left: 20px;
+        width: 70%;
+      }
+      .menu-logo-container{
+        left: 20px;
+      }
+    }
+  }
 }

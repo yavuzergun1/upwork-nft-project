@@ -56,7 +56,7 @@ header {
   flex-direction: column;
   align-items: center;
   position: relative;
-  z-index: 5;
+  z-index: 1;
   img {
     margin: auto;
   }
@@ -649,6 +649,23 @@ footer {
                       .animated-bears {
                         top: 150px;
                       }
+                      .second-body-right{
+                        margin-top: -50px;
+                      }
+                      .bear-gang{
+                        width: 90%;
+                      }
+                      .footer-first-left,
+                  .footer-first-right {
+                    width: 47%;
+                  }
+                  .logo-container{
+                    justify-content: center;
+                    img{
+                      width: 40px;
+                      margin: 5px;
+                    }
+                  }
                     }
                   }
                 }

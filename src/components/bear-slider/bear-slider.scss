@@ -123,8 +123,14 @@
               font-size: 15px;
             }
           }
+                  @media (max-width: 400px) {
+.bear-swiper{
+  width: 110%;
+}
+
         }
       }
     }
   }
+}
 }

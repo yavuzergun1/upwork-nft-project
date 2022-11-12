@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Menu.scss";
 function Menu({ showMenu, setShowMenu }) {
     return (
-      <React.Fragment>
         <div className={showMenu ? "menu-container" : "menu-none"}>
           <div className="menu-buttons">
             <img
@@ -24,7 +23,7 @@ function Menu({ showMenu, setShowMenu }) {
             <p>MERCH</p>
             <p>SAVE THE WORLD</p>
           </div>
-          <div className="menu-logo logo-container">
+          <div className="menu-logo-container">
             <img src={require(`../../assets/png/Group 1000002657.png`)} />
             <img src={require(`../../assets/png/Group 1000002658.png`)} />
             <img src={require(`../../assets/png/Group 1000002656.png`)} />
@@ -32,7 +31,6 @@ function Menu({ showMenu, setShowMenu }) {
             <img src={require(`../../assets/png/Group 1000002654.png`)} />
           </div>
         </div>
-      </React.Fragment>
     );
 }
 
