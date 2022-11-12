@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
+import BearCardsSwiper from "../../components/bear-cards-swiper/BearCardsSwiper";
+import BearCards from "../../components/bear-cards/BearCards";
 import BearSlider from "../../components/bear-slider/Bear-slider";
 import CuteBearsSlider from "../../components/cute-bears-slider/CuteBearsSlider";
 import Horizontal from "../../components/horizontal/Horizontal";
@@ -11,6 +13,7 @@ import "./home.scss";
 function Home() {
   const [showBears, setShowBears] = useState(false);
   const [isDesktop, setIsDesktop] = useState();
+  const [isMobile, setisMobile] = useState();
   const [windowSize, setWindowSize] = useState(getWindowSize());
 
   useEffect(() => {
@@ -31,6 +34,13 @@ function Home() {
   }
 
   useEffect(() => {
+ if (windowSize.innerWidth <= 680) {
+   setisMobile(true);
+    }
+     if (windowSize.innerWidth > 680) {
+       setisMobile(false);
+     }
+
     if (windowSize.innerWidth <= 1100) {
       setIsDesktop(false);
     }
@@ -116,36 +126,25 @@ function Home() {
         <SecondCuteBearSlider />
         <img src={require(`../../assets/png/BEAR GANG DONG CHU 1.png`)} />
       </div>
-      <div className={isDesktop ? "horizontal"  : "vertical" }>
-        {isDesktop ? <Horizontal /> : <Vertical windowSize={windowSize.innerWidth} />}
+      <div className={isDesktop ? "horizontal" : "vertical"}>
+        {isDesktop ? (
+          <Horizontal />
+        ) : (
+          <Vertical windowSize={windowSize.innerWidth} />
+        )}
       </div>
       <div className="home-fifth">
         <div className="fifth-header">
           <img src={require(`../../assets/png/OUR CREW.png`)} />
         </div>
         <div className="fifth-body-first">
-          <div className="bear-cards-container">
-            <img
-              src={require(`../../assets/png/Group 1000002593.png`)}
-              className="bear-cards"
-            />
-            <img
-              src={require(`../../assets/png/Group 1000002594.png`)}
-              className="bear-cards"
-            />
-            <img
-              src={require(`../../assets/png/Group 1000002588.png`)}
-              className="bear-cards"
-            />
-            <img
-              src={require(`../../assets/png/Group 1000002590.png`)}
-              className="bear-cards"
-            />
-            <img
-              src={require(`../../assets/png/Group 1000002592.png`)}
-              className="bear-cards"
-            />
-          </div>
+          {!isMobile ? (
+            <div className="bear-cards-swiper-container">
+              <BearCards />
+            </div>
+          ) : (
+            <BearCardsSwiper />
+          )}
         </div>
         <h2>FAQ</h2>
         <div className="fifth-body-second">

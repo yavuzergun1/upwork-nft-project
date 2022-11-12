@@ -242,15 +242,9 @@ header {
   justify-content: center;
   margin-bottom: 300px;
 }
-.bear-cards-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 90%;
-  max-width: 950px;
-  img {
-    padding: 50px;
-  }
+.bear-cards-swiper-container{
+position: relative;
+top: 550px;
 }
 .fifth-body-second {
   display: flex;
