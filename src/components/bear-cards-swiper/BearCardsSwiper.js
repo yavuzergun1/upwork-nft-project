@@ -22,36 +22,36 @@ export default () => {
         navigation
         // onSwiper={(swiper) => console.log(swiper)}
         // onSlideChange={() => console.log("slide change")}
-        className="bear-swiper"
+        className="bearCards-swiper"
       >
-        <SwiperSlide className="bear-slide">
+        <SwiperSlide className="bearCards-slide">
           <img
             src={require(`../../assets/png/Group 1000002593.png`)}
-            className="bear-cards"
+            className="bearCards-cards"
           />
         </SwiperSlide>
-        <SwiperSlide className="bear-slide">
+        <SwiperSlide className="bearCards-slide">
           <img
             src={require(`../../assets/png/Group 1000002594.png`)}
-            className="bear-cards"
+            className="bearCards-cards"
           />
         </SwiperSlide>
-        <SwiperSlide className="bear-slide">
+        <SwiperSlide className="bearCards-slide">
           <img
             src={require(`../../assets/png/Group 1000002588.png`)}
-            className="bear-cards"
+            className="bearCards-cards"
           />
         </SwiperSlide>
-        <SwiperSlide className="bear-slide">
+        <SwiperSlide className="bearCards-slide">
           <img
             src={require(`../../assets/png/Group 1000002590.png`)}
-            className="bear-cards"
+            className="bearCards-cards"
           />
         </SwiperSlide>
-        <SwiperSlide className="bear-slide">
+        <SwiperSlide className="bearCards-slide">
           <img
             src={require(`../../assets/png/Group 1000002592.png`)}
-            className="bear-cards"
+            className="bearCards-cards"
           />
         
         </SwiperSlide>
