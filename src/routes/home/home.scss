@@ -348,7 +348,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 150px;
 
   img {
     width: 224px;
@@ -421,7 +420,6 @@ footer {
           top: 50px;
         }
         .footer-first {
-          width: 70%;
           img {
             width: 150px;
             height: auto;
@@ -445,10 +443,7 @@ footer {
             background-image: url("../../assets/png/BG (12).png");
             background-size: cover;
           }
-          @media (max-width: 1010px) {
-            .footer-first {
-              padding: 0px 100px;
-            }
+            
             @media (max-width: 1000px) {
               .animated-bears {
                 top: 90px;
@@ -601,58 +596,58 @@ footer {
                       padding: 20px;
                     }
                   }
-                    .footer-first {
+                  .footer-first {
+                    img {
+                      position: absolute;
+                      margin-left: auto;
+                      margin-right: auto;
+                      left: 0;
+                      right: 0;
+                      top: -35px;
+                    }
+                  }
+                  .footer-first-left,
+                  .footer-first-right {
+                    width: 40%;
+                  }
+
+                  @media (max-width: 560px) {
+                    .animated-bears {
+                      top: 95px;
+                    }
+                    .first-planet-left {
+                      width: 100px;
+                    }
+                    .first-planet-right {
+                      width: 100px;
+                      top: 590px;
+                    }
+                    .scroll-icon-container {
                       img {
-                        position: absolute;
-                        margin-left: auto;
-                        margin-right: auto;
-                        left: 0;
-                        right: 0;
-                        top: -35px;
+                        width: 20px;
+                      }
+                      p {
+                        font-size: 10px;
                       }
                     }
-                    .footer-first-left,
-                    .footer-first-right {
-                      width: 40%;
+                    .pong-pay {
+                      width: 280px;
+                      right: 0px;
                     }
-                  
-                    @media (max-width: 560px) {
-                      .animated-bears {
-                        top: 95px;
-                      }
-                      .first-planet-left {
-                        width: 100px;
-                      }
-                      .first-planet-right {
-                        width: 100px;
-                        top: 590px;
+                    @media (max-width: 480px) {
+                      header {
+                        margin-top: 270px;
+                        h6 {
+                          font-size: 35px;
+                        }
                       }
                       .scroll-icon-container {
                         img {
-                          width: 20px;
-                        }
-                        p {
-                          font-size: 10px;
+                          width: 15px;
                         }
                       }
-                      .pong-pay {
-                        right: -40px;
-                      }
-                      @media (max-width: 480px) {
-                        header {
-                          margin-top: 270px;
-                          h6 {
-                            font-size: 35px;
-                          }
-                        }
-                        .scroll-icon-container {
-                          img {
-                            width: 15px;
-                          }
-                        }
-                        .animated-bears {
-                          top: 150px;
-                        }
+                      .animated-bears {
+                        top: 150px;
                       }
                     }
                   }
