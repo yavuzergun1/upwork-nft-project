@@ -146,8 +146,8 @@ function Home() {
             <BearCardsSwiper />
           )}
         </div>
-        <h2>FAQ</h2>
         <div className="fifth-body-second">
+          <h2>FAQ</h2>
           <div className="container p-first">
             <div className="p-left">
               <p>Who is the team behind Bear The Awesome News?</p>
@@ -181,10 +181,17 @@ function Home() {
             src={require(`../../assets/png/Vector (5).png`)}
             className="vector-5"
           />
-          <img
-            src={require(`../../assets/png/Group 76198.png`)}
-            className="bear-gang"
-          />
+          {isMobile ? (
+            <img
+              src={require(`../../assets/png/Group 76198 (1).png`)}
+              className="bear-gang"
+            />
+          ) : (
+            <img
+              src={require(`../../assets/png/Group 76198.png`)}
+              className="bear-gang"
+            />
+          )}
         </div>
         <footer>
           <div className="footer-first">

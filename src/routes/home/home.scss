@@ -242,15 +242,12 @@ header {
   justify-content: center;
   margin-bottom: 300px;
 }
-.bear-cards-swiper-container{
-// position: relative;
-// top: 550px;
-}
 .fifth-body-second {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: -300px;
 }
 .container {
   width: 50%;
@@ -401,6 +398,7 @@ footer {
     }
     .pong-pay {
       width: 600px;
+      right: 75px;
     }
     @media (max-width: 1393px) {
       .animated-bears {
@@ -413,6 +411,9 @@ footer {
       }
       .bear-gang {
         height: 120%;
+      }
+      .pong-pay {
+        width: 500px;
       }
       @media (max-width: 1177px) {
         .animated-bears {
@@ -432,15 +433,23 @@ footer {
           right: 80px;
         }
         @media (max-width: 1100px) {
+          .home-second {
+            background-image: url("../../assets/png/tablet.png");
+            background-size: cover;
+          }
           .home-third {
             height: 1200px;
           }
-
+          .home-fifth {
+            background-image: url("../../assets/png/BG (12).png");
+            background-size: cover;
+          }
           @media (max-width: 1000px) {
             .animated-bears {
               top: 90px;
             }
             .second-body-container {
+              width: 90%;
               flex-direction: column;
               align-items: center;
               justify-content: flex-start;
@@ -458,8 +467,11 @@ footer {
             .right-bear {
               top: 1050px;
             }
-            .fifth-header{
-              img{
+            .home-fifth {
+              height: 3200px;
+            }
+            .fifth-header {
+              img {
                 margin-top: 100px;
               }
             }
@@ -468,8 +480,11 @@ footer {
               height: 100%;
             }
             .pong-pay {
-              width: 450px;
+              width: 400px;
               right: 85px;
+            }
+            .vector-5 {
+              width: 70%;
             }
           }
           @media (max-width: 960px) {
@@ -532,42 +547,72 @@ footer {
               .pong-pay {
                 right: -25px;
               }
-              .vector-5 {
-                width: 450px;
+              .bear-gang {
+                width: 600px;
               }
-               @media (max-width: 680px) {
-                    .home-third {
-                      height: 850px;
-                    }
-              @media (max-width: 675px) {
+              @media (max-width: 680px) {
                 .animated-bears {
-                  top: 50px;
+                  top: 30px;
                 }
-                .bear-cards-container {
-                  img {
-                    padding: 20px;
+                .home-second {
+                  background-image: url("../../assets/png/mobile.png");
+                }
+                .home-third {
+                  height: 850px;
+                }
+                .right-bear {
+                  top: 380px;
+                  width: 250px;
+                }
+                .container {
+                  width: 85%;
+                }
+                .home-fifth {
+                  height: 2180px;
+                  background-image: url("../../assets/png/BG (12).png");
+                  background-size: cover;
+                }
+                .fifth-body-second {
+                  margin-top: -250px;
+                  h2 {
+                    font-size: 80px;
                   }
                 }
-                @media (max-width: 560px) {
-                  .first-planet-left {
-                    width: 100px;
-                  }
-                  .first-planet-right {
-                    width: 100px;
-                    top: 590px;
-                  }
-                  .scroll-icon-container {
+                .pong-pay {
+                  width: 300px;
+                  right: 0px;
+                }
+                .bear-gang {
+                  margin-top: -20px;
+                  width: 450px;
+                }
+                  .bear-cards-container {
                     img {
-                      width: 20px;
-                    }
-                    p {
-                      font-size: 10px;
+                      padding: 20px;
                     }
                   }
-                  .animated-bears {
-                    top: 150px;
-                  }
-                 
+                  @media (max-width: 560px) {
+                    .animated-bears {
+                      top: 95px;
+                    }
+                    .first-planet-left {
+                      width: 100px;
+                    }
+                    .first-planet-right {
+                      width: 100px;
+                      top: 590px;
+                    }
+                    .scroll-icon-container {
+                      img {
+                        width: 20px;
+                      }
+                      p {
+                        font-size: 10px;
+                      }
+                    }
+                    .pong-pay {
+                      right: -40px;
+                    }
                     @media (max-width: 480px) {
                       header {
                         margin-top: 270px;
@@ -593,4 +638,5 @@ footer {
       }
     }
   }
-}
+
+
