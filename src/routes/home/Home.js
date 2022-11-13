@@ -16,7 +16,7 @@ function Home() {
   const [isMobile, setisMobile] = useState();
   const [cardShow, setCardShow] = useState(false)
   const [windowSize, setWindowSize] = useState(getWindowSize());
-
+console.log(cardShow);
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
