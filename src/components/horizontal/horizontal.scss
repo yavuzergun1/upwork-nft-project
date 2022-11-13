@@ -1,14 +1,14 @@
 .horizontal-container {
   position: relative;
   max-width: 1920px;
-  height: 620px;
+  height: 950px;
   display: flex;
 }
 .horizontal-background {
   background-image: url("../../assets/png/BG\ \(6\).png");
   background-size: cover;
   max-width: 6858px;
-  height: 500px;
+  height: 900px;
 
 }
 .journey {
@@ -16,13 +16,13 @@
   width: 685px;
   height: 420px;
   left: 300px;
-  top: 100px;
+  top: 300px;
 }
 .spaceship {
   position: absolute;
   width: 202px;
   left: 1272px;
-  top: 170px;
+  top: 450px;
   z-index: 4;
 }
 .line {
@@ -30,12 +30,12 @@
   width: 5539px;
   height: 60px;
   left: 1316px;
-  top: 250px;
+  top: 550px;
 }
 .endLine {
   position: absolute;
   width: 247px;
-  height: 580px;
+  height: 950px;
   right: -5000px;
   top: 0px;
 }
@@ -55,13 +55,13 @@
   position: absolute;
   width: 576px;
   left: 4820px;
-  top: 20px;
+  top: 50px;
 }
 .component4 {
   position: absolute;
   width: 576px;
   left: 2900px;
-  top: 0px;
+  top: 50px;
 }
 // * {
 //     margin: 0;

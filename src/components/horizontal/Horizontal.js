@@ -93,7 +93,7 @@ console.log(windowSize);
   return (
     <div
       className="horizontal-container"
-      style={{ overflow: "auto" }}
+      style={{ overflow: "hidden" }}
       ref={elRef}
     >
       <div className="horizontal-background">
