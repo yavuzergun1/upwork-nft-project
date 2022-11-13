@@ -155,11 +155,11 @@ header {
     color: #ffffff;
   }
 }
-.buttons-container{
+.buttons-container {
   width: 70%;
   display: flex;
   justify-content: space-between;
-  img{
+  img {
     width: 45%;
     cursor: pointer;
   }
@@ -252,8 +252,8 @@ header {
   margin-bottom: 300px;
   width: 100%;
 }
-.bear-cards-container{
- width:  950px;
+.bear-cards-container {
+  width: 950px;
 }
 .fifth-body-second {
   display: flex;
@@ -285,7 +285,10 @@ header {
     font-size: 24px;
     line-height: 29px;
     color: #170f49;
-  }
+ }
+ .p-left{
+  width: 90%;
+ }
   p:nth-child(2) {
     font-family: "SVN-Gotham Rounded";
     font-style: normal;
@@ -312,7 +315,31 @@ header {
     color: #170f49;
   }
 }
-.card-none{
+.arrow-container {
+  border-radius: 50px;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.down {
+  background-color: #251d75;
+  width: 55px;
+  height: 55px;
+}
+.arrow {
+  font-size: 30px;
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
+.arrow-down {
+  transform: rotate(90deg);
+  transition: 0.5s;
+  color: white;
+  font-size: 30px;
+}
+.card-none {
   display: none;
 }
 .right-bear {
@@ -439,7 +466,7 @@ footer {
         .animated-bears {
           top: 50px;
         }
-        .second-planet-left{
+        .second-planet-left {
           width: 200px;
         }
         .footer-first {
@@ -467,234 +494,232 @@ footer {
             background-size: cover;
             padding-top: 190px;
           }
-        
-            
-            @media (max-width: 1000px) {
-              .animated-bears {
-                top: 90px;
-              }
-              .second-body-container {
-                width: 90%;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-              }
-              .second-body-left {
-                width: 80%;
-              }
-              .second-body-right {
-                width: 80%;
-              }
-              .second-planet-right {
-                width: 150px;
-              }
 
-              .right-bear {
-                top: 1050px;
-              }
-              .container {
-                width: 75%;
-              }
-              .home-fifth {
-                height: 3200px;
-              }
-              .fifth-header {
-                img {
-                  margin-top: 100px;
-                }
-              }
-              .bear-gang {
-                margin-top: 90px;
-                height: 100%;
-              }
-              .pong-pay {
-                width: 400px;
-                right: 85px;
-              }
-              .vector-5 {
-                width: 70%;
+          @media (max-width: 1000px) {
+            .animated-bears {
+              top: 90px;
+            }
+            .second-body-container {
+              width: 90%;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start;
+            }
+            .second-body-left {
+              width: 80%;
+            }
+            .second-body-right {
+              width: 80%;
+            }
+            .second-planet-right {
+              width: 150px;
+            }
+
+            .right-bear {
+              top: 1050px;
+            }
+            .container {
+              width: 75%;
+            }
+            .home-fifth {
+              height: 3200px;
+            }
+            .fifth-header {
+              img {
+                margin-top: 100px;
               }
             }
-            @media (max-width: 960px) {
-              header {
-                margin-top: 150px;
+            .bear-gang {
+              margin-top: 90px;
+              height: 100%;
+            }
+            .pong-pay {
+              width: 400px;
+              right: 85px;
+            }
+            .vector-5 {
+              width: 70%;
+            }
+          }
+          @media (max-width: 960px) {
+            header {
+              margin-top: 150px;
+            }
+            .scroll-icon-container {
+              margin-top: 50px;
+              img {
+                width: 25px;
               }
-              .scroll-icon-container {
-                margin-top: 50px;
-                img {
-                  width: 25px;
+              p {
+                font-size: 12px;
+              }
+            }
+            .animated-bears {
+              top: 0px;
+            }
+            .bear-cards-container {
+              width: 600px;
+            }
+            @media (max-width: 860px) {
+              header {
+                margin-top: 200px;
+                h6 {
+                  font-size: 35px;
                 }
-                p {
-                  font-size: 12px;
-                }
+              }
+              .second-planet-right {
+                width: 100px;
               }
               .animated-bears {
-                top: 0px;
+                top: -20px;
               }
-              .bear-cards-container{
+              .who-are-we-container {
+                h2 {
+                  font-size: 35px;
+                }
+                p {
+                  font-size: 15px;
+                }
+              }
+              .right-bear {
+                width: 300px;
+                top: 1150px;
+              }
+              .p-first {
+                p:first-child {
+                  font-size: 20px;
+                }
+                p:nth-child(2) {
+                  font-size: 15px;
+                }
+              }
+              .p-second,
+              .p-third,
+              .p-fourth {
+                font-size: 2px;
+                p:first-child {
+                  font-size: 20px;
+                }
+              }
+              .pong-pay {
+                right: 0px;
+              }
+              .bear-gang {
                 width: 600px;
               }
-              @media (max-width: 860px) {
-                header {
-                  margin-top: 200px;
-                  h6 {
-                    font-size: 35px;
-                  }
-                }
-                .second-planet-right {
-                  width: 100px;
-                }
+              .footer-first-left,
+              .footer-first-right {
+                width: 30%;
+              }
+              @media (max-width: 680px) {
                 .animated-bears {
-                  top: -20px;
+                  top: 30px;
                 }
-                .who-are-we-container {
-                  h2 {
-                    font-size: 35px;
-                  }
-                  p {
-                    font-size: 15px;
-                  }
+                .home-second {
+                  background-image: url("../../assets/png/mobile.png");
+                }
+                .home-third {
+                  height: 850px;
                 }
                 .right-bear {
-                  width: 300px;
-                  top: 1150px;
+                  top: 410px;
+                  width: 250px;
                 }
-                .p-first {
-                  p:first-child {
-                    font-size: 20px;
-                  }
-                  p:nth-child(2) {
-                    font-size: 15px;
-                  }
+
+                .home-fifth {
+                  height: 2180px;
+                  background-image: url("../../assets/png/BG (12).png");
+                  background-size: cover;
+                  padding-top: 0px;
                 }
-                .p-second,
-                .p-third,
-                .p-fourth {
-                  font-size: 2px;
-                  p:first-child {
-                    font-size: 20px;
+                .fifth-body-second {
+                  margin-top: -250px;
+                  h2 {
+                    font-size: 80px;
                   }
                 }
                 .pong-pay {
+                  width: 300px;
                   right: 0px;
                 }
                 .bear-gang {
-                  width: 600px;
+                  margin-top: -20px;
+                  width: 450px;
+                }
+                .bear-cards-container {
+                  img {
+                    padding: 20px;
+                  }
+                }
+                .footer-first {
+                  img {
+                    position: absolute;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    right: 0;
+                    top: -35px;
+                  }
                 }
                 .footer-first-left,
                 .footer-first-right {
-                  width: 30%;
+                  width: 40%;
                 }
-                @media (max-width: 680px) {
-                  .animated-bears {
-                    top: 30px;
-                  }
-                  .home-second {
-                    background-image: url("../../assets/png/mobile.png");
-                  }
-                  .home-third {
-                    height: 850px;
-                  }
-                  .right-bear {
-                    top: 410px;
-                    width: 250px;
-                  }
 
-                  .home-fifth {
-                    height: 2180px;
-                    background-image: url("../../assets/png/BG (12).png");
-                    background-size: cover;
-                    padding-top: 0px;
+                @media (max-width: 560px) {
+                  .animated-bears {
+                    top: 95px;
                   }
-                  .fifth-body-second {
-                    margin-top: -250px;
-                    h2 {
-                      font-size: 80px;
+                  .first-planet-left {
+                    width: 100px;
+                  }
+                  .first-planet-right {
+                    width: 100px;
+                    top: 590px;
+                  }
+                  .scroll-icon-container {
+                    img {
+                      width: 20px;
+                    }
+                    p {
+                      font-size: 10px;
                     }
                   }
                   .pong-pay {
-                    width: 300px;
+                    width: 280px;
                     right: 0px;
                   }
-                  .bear-gang {
-                    margin-top: -20px;
-                    width: 450px;
-                  }
-                  .bear-cards-container {
-                    img {
-                      padding: 20px;
-                    }
-                  }
-                  .footer-first {
-                    img {
-                      position: absolute;
-                      margin-left: auto;
-                      margin-right: auto;
-                      left: 0;
-                      right: 0;
-                      top: -35px;
-                    }
-                  }
-                  .footer-first-left,
-                  .footer-first-right {
-                    width: 40%;
-                  }
-
-                  @media (max-width: 560px) {
-                    .animated-bears {
-                      top: 95px;
-                    }
-                    .first-planet-left {
-                      width: 100px;
-                    }
-                    .first-planet-right {
-                      width: 100px;
-                      top: 590px;
+                  @media (max-width: 480px) {
+                    header {
+                      margin-top: 270px;
+                      h6 {
+                        font-size: 35px;
+                      }
                     }
                     .scroll-icon-container {
                       img {
-                        width: 20px;
-                      }
-                      p {
-                        font-size: 10px;
+                        width: 15px;
                       }
                     }
-                    .pong-pay {
-                      width: 280px;
-                      right: 0px;
+                    .animated-bears {
+                      top: 150px;
                     }
-                    @media (max-width: 480px) {
-                      header {
-                        margin-top: 270px;
-                        h6 {
-                          font-size: 35px;
-                        }
-                      }
-                      .scroll-icon-container {
-                        img {
-                          width: 15px;
-                        }
-                      }
-                      .animated-bears {
-                        top: 150px;
-                      }
-                      .second-body-right{
-                        margin-top: -50px;
-                      }
-                      .bear-gang{
-                        width: 90%;
-                      }
-                      .footer-first-left,
-                  .footer-first-right {
-                    width: 47%;
-                  }
-                  .logo-container{
-                    justify-content: center;
-                    img{
-                      width: 40px;
-                      margin: 5px;
+                    .second-body-right {
+                      margin-top: -50px;
                     }
-                  }
+                    .bear-gang {
+                      width: 90%;
+                    }
+                    .footer-first-left,
+                    .footer-first-right {
+                      width: 47%;
+                    }
+                    .logo-container {
+                      justify-content: center;
+                      img {
+                        width: 40px;
+                        margin: 5px;
+                      }
                     }
                   }
                 }
@@ -705,4 +730,4 @@ footer {
       }
     }
   }
-
+}

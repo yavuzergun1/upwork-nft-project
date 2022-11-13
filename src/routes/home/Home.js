@@ -8,15 +8,20 @@ import Menu from "../../components/menu/Menu";
 import Navbar from "../../components/navbar/Navbar";
 import SecondCuteBearSlider from "../../components/second-cuteBear-slider/SecondCuteBearSlider";
 import Vertical from "../../components/vertical/Vertical";
+import { ReactComponent as Arrow } from "../../assets/png/Vector 205.svg";
+import { IoIosArrowForward } from "react-icons/io";
+
 import "./home.scss";
 
 function Home() {
   const [showBears, setShowBears] = useState(false);
   const [isDesktop, setIsDesktop] = useState();
   const [isMobile, setisMobile] = useState();
-  const [cardShow, setCardShow] = useState(false)
+  const [firstCardShow, setFirstCardShow] = useState(false);
+  const [secondCardShow, setSecondCardShow] = useState(false);
+  const [thirdCardShow, setThirdCardShow] = useState(false);
+  const [fourthCardShow, setFourthCardShow] = useState(false);
   const [windowSize, setWindowSize] = useState(getWindowSize());
-console.log(cardShow);
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
@@ -35,12 +40,12 @@ console.log(cardShow);
   }
 
   useEffect(() => {
- if (windowSize.innerWidth <= 680) {
-   setisMobile(true);
+    if (windowSize.innerWidth <= 680) {
+      setisMobile(true);
     }
-     if (windowSize.innerWidth > 680) {
-       setisMobile(false);
-     }
+    if (windowSize.innerWidth > 680) {
+      setisMobile(false);
+    }
 
     if (windowSize.innerWidth <= 1100) {
       setIsDesktop(false);
@@ -163,21 +168,55 @@ console.log(cardShow);
                 aims to contribute to the new future of entertainment.
               </p>
             </div>
-            <div>
-              <img
-                src={require(`../../assets/png/Group 35538.png`)}
-                onClick={() => setCardShow(!cardShow)}
+            <div
+              className={
+                firstCardShow ? "arrow-container down" : "arrow-container"
+              }
+              onClick={() => setFirstCardShow(!firstCardShow)}
+            >
+              <IoIosArrowForward
+                className={firstCardShow ? "arrow-down" : "arrow"}
               />
             </div>
           </div>
-          <div className={`container ${cardShow ? "p-second" : "card-none"}`}>
+          <div className="container p-second">
             <p>What makes The Bear Gang so unique?</p>
+            <div
+              className={
+                secondCardShow ? "arrow-container down" : "arrow-container"
+              }
+              onClick={() => setSecondCardShow(!secondCardShow)}
+            >
+              <IoIosArrowForward
+                className={secondCardShow ? "arrow-down" : "arrow"}
+              />
+            </div>
           </div>
-          <div className={`container ${cardShow ? "p-third" : "card-none"}`}>
+          <div className="container p-third">
             <p>What is the total supply for the Bear collection? </p>
+            <div
+              className={
+                thirdCardShow ? "arrow-container down" : "arrow-container"
+              }
+              onClick={() => setThirdCardShow(!thirdCardShow)}
+            >
+              <IoIosArrowForward
+                className={thirdCardShow ? "arrow-down" : "arrow"}
+              />
+            </div>
           </div>
-          <div className={`container ${cardShow ? "p-fourth" : "card-none"}`}>
+          <div className="container p-fourth">
             <p>What do you call a bear without any teeth?</p>
+            <div
+              className={
+                fourthCardShow ? "arrow-container down" : "arrow-container"
+              }
+              onClick={() => setFourthCardShow(!fourthCardShow)}
+            >
+              <IoIosArrowForward
+                className={fourthCardShow ? "arrow-down" : "arrow"}
+              />
+            </div>
           </div>
           <img
             src={require(`../../assets/png/BIETTUOT-FACE (2).png`)}
