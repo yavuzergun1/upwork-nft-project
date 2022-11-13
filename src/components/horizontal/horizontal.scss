@@ -1,69 +1,66 @@
 .horizontal-container {
   position: relative;
   max-width: 1920px;
-  height: 1310px;
+  height: 610px;
   display: flex;
 }
 .horizontal-background {
   background-image: url("../../assets/png/BG\ \(6\).png");
+  background-size: cover;
   max-width: 6858px;
-  height: 1080px;
+  height: 500px;
+
 }
 .journey {
   position: absolute;
-  width: 885px;
-  height: 580px;
-  left: 529px;
-  top: 320px;
+  width: 685px;
+  height: 420px;
+  left: 300px;
+  top: 100px;
 }
 .spaceship {
   position: absolute;
-  width: 262px;
-  height: 262px;
-  left: 1972px;
-  top: 396px;
+  width: 202px;
+  left: 1272px;
+  top: 170px;
   z-index: 4;
 }
 .line {
   position: absolute;
-  width: 4939px;
+  width: 5539px;
   height: 60px;
-  left: 1916px;
-  top: 510px;
+  left: 1316px;
+  top: 250px;
 }
 .endLine {
   position: absolute;
   width: 247px;
-  height: 1182px;
-  right: -5000px;
-  top: -104px;
+  height: 532px;
+  right: -4990px;
+  top: 30px;
 }
 .component1 {
   position: absolute;
-  width: 1076px;
-  height: 448px;
-  left: 2392px;
-  top: 539px;
+  width: 556px;
+  left: 1900px;
+  bottom: 10px;
 }
 .component2 {
   position: absolute;
-  width: 1076px;
-  height: 448px;
-  left: 4312px;
-  top: 539px;
+  width: 576px;
+  left: 3850px;
+  bottom: 39px;
 }
 .component3 {
   position: absolute;
-  width: 1076px;
-  height: 448px;
-  left: 5272px;
+  width: 576px;
+  left: 4820px;
   top: 0px;
 }
 .component4 {
   position: absolute;
-  width: 1076px;
-  height: 448px;
-  left: 3352px;
+  width: 576px;
+  left: 2900px;
   top: 0px;
 }
 // * {

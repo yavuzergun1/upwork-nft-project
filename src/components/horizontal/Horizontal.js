@@ -51,26 +51,26 @@ console.log(windowSize);
     const ship = spaceRef.current;
     if (element) {
       const onWheel = (e) => {
-        console.log(element.scrollLeft);
+        console.log("scroll left",element.scrollLeft);
         if (element.scrollLeft < 1390) {
           ship.style.transform = "translate(0px)";
-          ship.style.transition = "1s";
+          ship.style.transition = "2s";
         }
-        if (element.scrollLeft > 1390) {
-          ship.style.transform = "translate(210%)";
-          ship.style.transition = "1s";
+        if (element.scrollLeft > 1150) {
+          ship.style.transform = "translate(380%)";
+          ship.style.transition = "2s";
         }
-          if (element.scrollLeft > 2325) {
-            ship.style.transform = "translate(590%)";
-            ship.style.transition = "1s";
+          if (element.scrollLeft > 2125) {
+            ship.style.transform = "translate(920%)";
+            ship.style.transition = "2s";
         }
           if (element.scrollLeft > 3000) {
-            ship.style.transform = "translate(950%)";
-            ship.style.transition = "1s";
+            ship.style.transform = "translate(1460%)";
+            ship.style.transition = "2s";
           }
           if (element.scrollLeft > 4100) {
-            ship.style.transform = "translate(1320%)";
-            ship.style.transition = "1s";
+            ship.style.transform = "translate(1990%)";
+            ship.style.transition = "2s";
           }
         if (element.scrollLeft >= 4800 && e.deltaY > 0) {
           return () => element.removeEventListener("wheel", onWheel);
