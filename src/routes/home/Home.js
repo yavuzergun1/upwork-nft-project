@@ -109,6 +109,10 @@ function Home() {
                 We save the humanity from being out-of-date, out-of-style and
                 most importantly, out-of-news.
               </p>
+              <div className="buttons-container">
+                <img src={require(`../../assets/png/OWN A BEAR NOW CTA (1).png`)} />
+                <img src={require(`../../assets/png/READ OUR NEWS CTA.png`)} />
+              </div>
             </div>
           </div>
         </div>

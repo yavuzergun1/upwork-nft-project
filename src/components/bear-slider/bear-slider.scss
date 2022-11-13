@@ -1,5 +1,5 @@
 .bear-background {
-  width: 60%;
+  width: 450px;
   height: 550px;
   background-image: url("../../assets/png/Rectangle\ 4475.png");
   background-repeat: no-repeat;
@@ -7,13 +7,13 @@
 }
 .bear-swiper {
   position: relative;
-  width: 120%;
+  width: 540px;
   height: 950px;
-  top: -170px;
+  top: -195px;
   left: -50px;
 }
 .bear-slide {
-  width: 120%;
+  width: 640px;
   height: 750px;
   display: flex;
   flex-direction: column;
@@ -78,59 +78,49 @@
   }
 }
 
-@media (max-width: 1746px) {
+@media (max-width: 1325px) {
+  .bear-background {
+    width: 350px;
+  }
   .bear-swiper {
-    top: -200px;
+    width: 450px;
+    top: -225px;
+  }
+  .yellow {
+    width: 85%;
+  }
+  .green {
+    width: 126%;
+  }
+  .blue {
+    width: 92%;
+  }
+  .pink {
+    width: 107%;
   }
 
-  @media (max-width: 1450px) {
-    .bear-swiper {
-      top: -220px;
-      left: -45px;
-    }
-    @media (max-width: 1250px) {
-      .bear-swiper {
-        top: -240px;
-        left: -35px;
-      }
-      @media (max-width: 1190px) {
-        .bear-swiper {
-          top: -270px;
-          left: -35px;
-        }
+ 
+      @media (max-width: 1000px) {
+  .bear-swiper{
+    top: -265px;
+  }
         .bear-info {
-          font-size: 30px;
+          font-size: 20px;
+          span {
+            font-size: 15px;
+          }
         }
-        @media (max-width: 1000px) {
-          .bear-background {
-            width: 350px;
-          }
+        @media (max-width: 400px) {
+           .bear-background {
+    width: 250px;
+  }
           .bear-swiper {
-            width: 400px;
-            top: -264px;
-            left: -22px;
-            img {
-              left: -5px;
-            }
-            #blueb {
-              left: 3px;
-              top: 89px;
-            }
-          }
-          .bear-info {
-            font-size: 20px;
-            span {
-              font-size: 15px;
-            }
-          }
-                  @media (max-width: 400px) {
-.bear-swiper{
-  width: 110%;
-}
+            width: 350px;
+                top: -315px;
 
+          }
         }
       }
     }
-  }
-}
-}
+  
+

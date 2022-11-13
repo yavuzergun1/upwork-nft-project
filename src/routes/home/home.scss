@@ -155,6 +155,14 @@ header {
     color: #ffffff;
   }
 }
+.buttons-container{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  img{
+    width: 45%;
+  }
+}
 .second-planet-right {
   position: absolute;
   right: 0px;
@@ -197,7 +205,6 @@ header {
     width: 70%;
   }
 }
-
 .horizontal {
   background-image: url("../../assets/png/BG (3).png");
   max-width: 1920px;
@@ -418,6 +425,9 @@ footer {
       @media (max-width: 1177px) {
         .animated-bears {
           top: 50px;
+        }
+        .second-planet-left{
+          width: 200px;
         }
         .footer-first {
           img {
