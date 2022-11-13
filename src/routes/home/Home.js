@@ -233,7 +233,7 @@ function Home() {
             src={require(`../../assets/png/Vector (5).png`)}
             className="vector-5"
           />
-          {isMobile ? (
+          {/* {isMobile ? (
             <img
               src={require(`../../assets/png/Group 76198 (1).png`)}
               className="bear-gang"
@@ -243,7 +243,18 @@ function Home() {
               src={require(`../../assets/png/Group 76198.png`)}
               className="bear-gang"
             />
-          )}
+          )} */}
+          <div className="bear-gang">
+            <img
+              src={require(`../../assets/png/Artboard 14 1.png`)}
+              className="bear-gang-in"
+            />
+            <img
+              src={require(`../../assets/png/Title.png`)}
+              className="bear-gang-title"
+            />
+            <button className="own-button">OWN A BEAR NOW</button>
+          </div>
         </div>
         <footer>
           <div className="footer-first">

@@ -30,6 +30,7 @@ export default () => {
       }}
       loop
       speed={3000}
+    
     >
       <SwiperSlide className="bearCards-slide">
         <img
