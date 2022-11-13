@@ -30,13 +30,13 @@ const [startHorizontal, setStartHorizontal] = useState(false)
   useEffect(() => {
     window.addEventListener("scroll", function () {
 
-      if (window.scrollY <= 3384) {
+      if (window.scrollY <= 3545) {
         setStartHorizontal(false);
       }
-      if (window.scrollY > 3384) {
+      if (window.scrollY > 3545) {
         setStartHorizontal(true);
       }
-       if (window.scrollY > 4060) {
+       if (window.scrollY > 3860) {
          setStartHorizontal(false);
        }
       console.log(window.scrollY);
@@ -67,7 +67,7 @@ console.log(windowSize);
   useEffect(() => {
     const element = elRef.current;
     const ship = spaceRef.current;
-    if (startHorizontal == true) {
+    if (startHorizontal && element) {
       const onWheel = (e) => {
         console.log("scroll left",element.scrollLeft);
         if (element.scrollLeft < 1390) {
