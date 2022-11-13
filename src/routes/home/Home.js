@@ -14,6 +14,7 @@ function Home() {
   const [showBears, setShowBears] = useState(false);
   const [isDesktop, setIsDesktop] = useState();
   const [isMobile, setisMobile] = useState();
+  const [cardShow, setCardShow] = useState(false)
   const [windowSize, setWindowSize] = useState(getWindowSize());
 
   useEffect(() => {
@@ -110,7 +111,9 @@ function Home() {
                 most importantly, out-of-news.
               </p>
               <div className="buttons-container">
-                <img src={require(`../../assets/png/OWN A BEAR NOW CTA (1).png`)} />
+                <img
+                  src={require(`../../assets/png/OWN A BEAR NOW CTA (1).png`)}
+                />
                 <img src={require(`../../assets/png/READ OUR NEWS CTA.png`)} />
               </div>
             </div>
@@ -160,15 +163,18 @@ function Home() {
                 aims to contribute to the new future of entertainment.
               </p>
             </div>
-            <img src={require(`../../assets/png/Group 35538.png`)} />
+            <img
+              src={require(`../../assets/png/Group 35538.png`)}
+              onClick={() => setCardShow(!cardShow)}
+            />
           </div>
-          <div className="container p-second">
+          <div className={`container ${cardShow ? "p-second" : "card-none"}`}>
             <p>What makes The Bear Gang so unique?</p>
           </div>
-          <div className="container p-third">
+          <div className={`container ${cardShow ? "p-third" : "card-none"}`}>
             <p>What is the total supply for the Bear collection? </p>
           </div>
-          <div className="container p-fourth">
+          <div className={`container ${cardShow ? "p-fourth" : "card-none"}`}>
             <p>What do you call a bear without any teeth?</p>
           </div>
           <img

@@ -18,7 +18,7 @@ export default () => {
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
       spaceBetween={0}
-      slidesPerView={1}
+      slidesPerView={2}
       navigation
       // onSwiper={(swiper) => console.log(swiper)}
       // onSlideChange={() => console.log("slide change")}

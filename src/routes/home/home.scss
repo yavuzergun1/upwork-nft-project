@@ -310,6 +310,9 @@ header {
     color: #170f49;
   }
 }
+.card-none{
+  display: none;
+}
 .right-bear {
   position: absolute;
   right: 0px;
@@ -458,7 +461,9 @@ footer {
           .home-fifth {
             background-image: url("../../assets/png/BG (12).png");
             background-size: cover;
+            padding-top: 190px;
           }
+        
             
             @media (max-width: 1000px) {
               .animated-bears {
