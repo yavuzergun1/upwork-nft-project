@@ -143,7 +143,7 @@ function Home() {
         </div>
         <div className="fifth-body-first">
           {!isMobile ? (
-            <div className="bear-cards-swiper-container">
+            <div className="bear-cards-container">
               <BearCards />
             </div>
           ) : (

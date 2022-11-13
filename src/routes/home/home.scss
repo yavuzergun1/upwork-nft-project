@@ -249,6 +249,10 @@ header {
   display: flex;
   justify-content: center;
   margin-bottom: 300px;
+  width: 100%;
+}
+.bear-cards-container{
+ width:  950px;
 }
 .fifth-body-second {
   display: flex;
@@ -516,6 +520,9 @@ footer {
               }
               .animated-bears {
                 top: 0px;
+              }
+              .bear-cards-container{
+                width: 600px;
               }
               @media (max-width: 860px) {
                 header {
