@@ -269,6 +269,8 @@ header {
   border-radius: 25px;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 2;
   img {
     width: 52px;
     height: 52px;
@@ -315,7 +317,9 @@ header {
 }
 .right-bear {
   position: absolute;
+  // top: 170px;
   right: 0px;
+  z-index: 0;
 }
 .home-sixth {
   width: 100%;

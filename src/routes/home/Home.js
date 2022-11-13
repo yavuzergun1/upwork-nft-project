@@ -163,10 +163,12 @@ console.log(cardShow);
                 aims to contribute to the new future of entertainment.
               </p>
             </div>
-            <img
-              src={require(`../../assets/png/Group 35538.png`)}
-              onClick={() => setCardShow(!cardShow)}
-            />
+            <div>
+              <img
+                src={require(`../../assets/png/Group 35538.png`)}
+                onClick={() => setCardShow(!cardShow)}
+              />
+            </div>
           </div>
           <div className={`container ${cardShow ? "p-second" : "card-none"}`}>
             <p>What makes The Bear Gang so unique?</p>
