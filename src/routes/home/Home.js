@@ -22,6 +22,7 @@ function Home() {
   const [thirdCardShow, setThirdCardShow] = useState(false);
   const [fourthCardShow, setFourthCardShow] = useState(false);
   const [windowSize, setWindowSize] = useState(getWindowSize());
+  
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());

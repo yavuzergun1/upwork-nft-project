@@ -26,7 +26,23 @@ function Horizontal() {
   // }, []);
 
   const [windowSize, setWindowSize] = useState(getWindowSize());
+const [startHorizontal, setStartHorizontal] = useState(false)
+  useEffect(() => {
+    window.addEventListener("scroll", function () {
 
+      if (window.scrollY <= 3384) {
+        setStartHorizontal(false);
+      }
+      if (window.scrollY > 3384) {
+        setStartHorizontal(true);
+      }
+       if (window.scrollY > 4060) {
+         setStartHorizontal(false);
+       }
+      console.log(window.scrollY);
+    })
+  },[])
+console.log("HORİZONTAL", startHorizontal);
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
@@ -37,6 +53,8 @@ function Horizontal() {
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
+
+
   }, []);
 console.log(windowSize);
   function getWindowSize() {
@@ -49,7 +67,7 @@ console.log(windowSize);
   useEffect(() => {
     const element = elRef.current;
     const ship = spaceRef.current;
-    if (element) {
+    if (startHorizontal == true) {
       const onWheel = (e) => {
         console.log("scroll left",element.scrollLeft);
         if (element.scrollLeft < 1390) {
@@ -88,7 +106,7 @@ console.log(windowSize);
       element.addEventListener("wheel", onWheel);
       return () => element.removeEventListener("wheel", onWheel);
     }
-  }, []);
+  }, [startHorizontal]);
 
   return (
     <div
