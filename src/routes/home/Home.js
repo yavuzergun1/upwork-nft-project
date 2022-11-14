@@ -164,7 +164,7 @@ function Home() {
           <div className="container p-first">
             <div className="p-left">
               <p>Who is the team behind Bear The Awesome News?</p>
-              <p className={firstCardShow ? null : "card-none"} >
+              <p className={firstCardShow ? null : "card-none"}>
                 We are QBA Studio, a collective of tech-savvy individuals that
                 aims to contribute to the new future of entertainment.
               </p>
@@ -219,11 +219,8 @@ function Home() {
               />
             </div>
           </div>
-          <img
-            src={require(`../../assets/png/BIETTUOT-FACE (2).png`)}
-            className="right-bear"
-          />
         </div>
+
         <div className="home-sixth">
           <img
             src={require(`../../assets/png/PONG PAY-FACE (1).png`)}
@@ -284,6 +281,10 @@ function Home() {
             </div>
           </div>
         </footer>
+      <img
+        src={require(`../../assets/png/BIETTUOT-FACE (2).png`)}
+        className="right-bear"
+      />
       </div>
     </div>
   );

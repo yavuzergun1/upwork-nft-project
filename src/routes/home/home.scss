@@ -261,6 +261,10 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: -300px;
+  h2{
+    position: relative;
+    z-index: 5;
+  }
 }
 .container {
   width: 50%;
@@ -332,6 +336,7 @@ header {
   position: absolute;
   top: 25px;
   right: 35px;
+  opacity: 100;
   background-color: #251d75;
   width: 55px;
   height: 55px;
@@ -356,9 +361,9 @@ header {
 }
 .right-bear {
   position: absolute;
-  // top: 170px;
+  top: 450px;
   right: 0px;
-  z-index: 0;
+  z-index: 1;
 }
 .home-sixth {
   width: 100%;
@@ -480,6 +485,7 @@ footer {
       top: -200px;
     }
     .right-bear {
+      top: 650px;
       width: 450px;
     }
     .who-are-we-container {
@@ -594,7 +600,7 @@ footer {
             }
 
             .right-bear {
-              top: 1050px;
+              top: 850px;
             }
             .container {
               width: 75%;
@@ -653,7 +659,9 @@ footer {
             .pong-pay {
               right: 0px;
             }
-
+ .right-bear {
+              top: 1250px;
+            }
             @media (max-width: 860px) {
               header {
                 margin-top: 200px;
@@ -677,7 +685,7 @@ footer {
               }
               .right-bear {
                 width: 300px;
-                top: 1150px;
+                top: 1450px;
               }
               .p-first {
                 p:first-child {
@@ -800,7 +808,9 @@ footer {
                   .bear-gang {
                     height: 280px;
                   }
-
+.right-bear{
+  top: 350px;
+}
                   @media (max-width: 480px) {
                     header {
                       margin-top: 270px;
@@ -819,6 +829,7 @@ footer {
                     .second-body-right {
                       margin-top: -50px;
                     }
+                 
                     .bear-gang {
                       width: 90%;
                       height: 200px;
