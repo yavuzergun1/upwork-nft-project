@@ -164,7 +164,7 @@ function Home() {
           <div className="container p-first">
             <div className="p-left">
               <p>Who is the team behind Bear The Awesome News?</p>
-              <p>
+              <p className={firstCardShow ? null : "card-none"} >
                 We are QBA Studio, a collective of tech-savvy individuals that
                 aims to contribute to the new future of entertainment.
               </p>
