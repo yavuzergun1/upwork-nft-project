@@ -332,7 +332,6 @@ header {
   position: absolute;
   top: 25px;
   right: 35px;
-
   background-color: #251d75;
   width: 55px;
   height: 55px;
@@ -341,14 +340,12 @@ header {
   position: absolute;
   top: 8px;
   right: 25px;
-
   font-size: 30px;
   transform: rotate(0deg);
   transition: 0.5s;
 }
 .arrow-down {
   position: absolute;
-
   transform: rotate(90deg);
   transition: 0.5s;
   color: white;
@@ -518,6 +515,8 @@ footer {
       }
       .down{
         right: 5px;
+        width: 45px;
+        height: 45px;
       }
       .arrow{
         right: 5px;
