@@ -277,6 +277,8 @@ header {
   }
 }
 .p-first {
+  position: relative;
+
   padding: 20px;
   p:first-child {
     font-style: normal;
@@ -315,6 +317,9 @@ header {
   }
 }
 .arrow-container {
+  position: absolute;
+  top: 25px;
+  right: 25px;
   border-radius: 50px;
   width: 65px;
   height: 65px;
@@ -324,18 +329,30 @@ header {
   cursor: pointer;
 }
 .down {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+
   background-color: #251d75;
   width: 55px;
   height: 55px;
 }
 .arrow {
+  position: absolute;
+  top: 8px;
+  right: 25px;
+
   font-size: 30px;
+  transform: rotate(0deg);
   transition: 0.5s;
 }
 .arrow-down {
+  position: absolute;
+
+  transform: rotate(90deg);
   transition: 0.5s;
   color: white;
-  font-size: 30px;
+  font-size: 35px;
 }
 .card-none {
   display: none;
@@ -720,15 +737,15 @@ footer {
                   width: 450px;
                   height: 280px;
                 }
-                   .bear-gang-in {
-                    height: 280px;
-                  }
-                   .bear-gang-title {
-                    top: 80px;
-                  }
-                  .own-button {
-                    top: 180px;
-                  }
+                .bear-gang-in {
+                  height: 280px;
+                }
+                .bear-gang-title {
+                  top: 80px;
+                }
+                .own-button {
+                  top: 180px;
+                }
                 .bear-cards-container {
                   img {
                     padding: 20px;
@@ -775,8 +792,7 @@ footer {
                   .bear-gang {
                     height: 280px;
                   }
-               
-                 
+
                   @media (max-width: 480px) {
                     header {
                       margin-top: 270px;
