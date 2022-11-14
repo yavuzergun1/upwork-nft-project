@@ -366,7 +366,7 @@ header {
   background-color: #da368b;
   width: 70%;
   height: 550px;
-  margin-top: 100px;
+  margin-top: 580px;
   border-radius: 25px;
   position: relative;
   z-index: 0;
@@ -475,7 +475,7 @@ footer {
     }
     .bear-gang {
       height: 450px;
-      margin-top: 250px;
+      margin-top: 680px;
     }
     .bear-gang-in {
       height: 450px;
@@ -498,6 +498,7 @@ footer {
       }
       .bear-gang {
         height: 400px;
+        margin-top: 780px;
       }
       .bear-gang-in {
         height: 400px;
@@ -507,6 +508,9 @@ footer {
       }
       .pong-pay {
         width: 500px;
+      }
+      .vector-5 {
+        width: 50%;
       }
       @media (max-width: 1177px) {
         .animated-bears {
@@ -525,7 +529,7 @@ footer {
           }
         }
         .pong-pay {
-          right: 80px;
+          right: 20px;
         }
         @media (max-width: 1100px) {
           .home-second {
@@ -577,6 +581,7 @@ footer {
             }
             .bear-gang {
               height: 350px;
+              margin-top: 480px;
             }
             .bear-gang-in {
               height: 350px;
@@ -590,9 +595,6 @@ footer {
             .pong-pay {
               width: 400px;
               right: 85px;
-            }
-            .vector-5 {
-              width: 70%;
             }
           }
           @media (max-width: 960px) {
@@ -615,7 +617,10 @@ footer {
               width: 600px;
             }
             .bear-gang {
-              margin-top: 50px;
+              margin-top: 80px;
+            }
+            .pong-pay {
+              right: 0px;
             }
 
             @media (max-width: 860px) {
@@ -661,6 +666,7 @@ footer {
               }
               .pong-pay {
                 right: 0px;
+                width: 350px;
               }
               .bear-gang {
                 width: 600px;
@@ -704,7 +710,7 @@ footer {
                   right: 0px;
                 }
                 .bear-gang {
-                  margin-top: -20px;
+                  margin-top: 0px;
                   width: 450px;
                 }
                 .bear-cards-container {
@@ -750,6 +756,18 @@ footer {
                     width: 280px;
                     right: 0px;
                   }
+                  .bear-gang {
+                    height: 280px;
+                  }
+                  .bear-gang-in {
+                    height: 280px;
+                  }
+                  .bear-gang-title {
+                    top: 80px;
+                  }
+                  .own-button {
+                    top: 180px;
+                  }
                   @media (max-width: 480px) {
                     header {
                       margin-top: 270px;
@@ -770,18 +788,25 @@ footer {
                     }
                     .bear-gang {
                       width: 90%;
-                      height: 300px;
+                      height: 200px;
+                      margin-top: 220px;
                     }
-                    .bear-gang-in{
-                      height: 300px;
+                    .bear-gang-in {
+                      height: 200px;
                     }
-                 
-                      .own-button{
-      top: 205px;
-      width: 40%;
-      font-size: 12px;
-      height: 30px;
-    }
+                    .bear-gang-title {
+                      top: 50px;
+                    }
+                    .own-button {
+                      top: 125px;
+                      width: 40%;
+                      font-size: 12px;
+                      height: 30px;
+                    }
+                    .pong-pay {
+                    width: 200px;
+                    right: 0px;
+                  }
                     .footer-first-left,
                     .footer-first-right {
                       width: 47%;
